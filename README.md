@@ -33,6 +33,8 @@ https://github.com/nextgis/QTiles
 
 ## Basemap 1: WorldMap basemap 
 
+![alt text](https://github.com/ingmapping/Basemaps_QTiles/blob/master/WorldMap.png)
+
 ### Shapefiles used: 
 
 * 50m Physical, Rivers + lake centerlines: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_rivers_lake_centerlines.zip  (389.27 KB)
@@ -151,4 +153,438 @@ More about slippy maps: https://en.wikipedia.org/wiki/Tiled_web_map/
 
 Press Run to start the tile generation. Once the process is completed, open the leaflet-based viewer QTiles.html in the browser to check if the tiles are rendered correctly.
 
-## To be continued
+## Basemap 2: WorldMap_Light basemap 
+
+![alt text](https://github.com/ingmapping/Basemaps_QTiles/blob/master/WorldMap_Light.png)
+
+### Shapefiles used: 
+
+* 50m Physical, Rivers + lake centerlines: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_rivers_lake_centerlines.zip  (389.27 KB)
+* 10m Physical, Coastline (includes major islands):http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_coastline.zip
+(2.93 MB) 
+* 10m Physical, Lakes:http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_lakes.zip (1.74 MB)
+* 10m  Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_glaciated_areas.zip (1.57 MB)
+* 50m Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_glaciated_areas.zip (211.39 KB)
+* 50m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_land.zip (446.45 KB)
+* 10m Physical, Bathymetry 5000m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_F_5000.zip (2.72 MB) 
+* 10m Physical, Bathymetry 4000m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_G_4000.zip (3.43 MB)
+* 10m Physical, Bathymetry 1000m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_J_1000.zip (741.08 KB)
+* 10m Physical, Bathymetry 200m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_K_200.zip (1.14 MB) 
+* 10m Physical, Bathymetry 0m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_L_0.zip  (2.86 MB) 
+* 10m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_ocean.zip (3.48 MB) 
+* 50m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_ocean.zip (450.91 KB) 
+
+## Tutorial Basemap 2: WorldMap_Light basemap
+
+### Step 1: Download Natural Earth data 
+
+Download the shapefiles (in .zip format) from the website of Natural Earth: http://www.naturalearthdata.com/downloads/. Create a folder “WorldMap_Light” and a subfolder “Data”. Import the downloaded .zip files into the “Data” subfolder. Afterwards, unzip all the .zip files. 
+
+```
+mkdir -p WorldMap_Light/Data
+cd WorldMap_Light/Data
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_rivers_lake_centerlines.zip
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_coastline.zip
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_lakes.zip 
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_glaciated_areas.zip 
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_glaciated_areas.zip
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_land.zip
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_F_5000.zip
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_G_4000.zip 
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_J_1000.zip
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_K_200.zip
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_L_0.zip 
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_ocean.zip 
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_ocean.zip 
+unzip ne_50m_rivers_lake_centerlines.zip 
+unzip ne_10m_coastline.zip
+unzip ne_10m_lakes.zip 
+unzip ne_10m_glaciated_areas.zip 
+unzip ne_50m_glaciated_areas.zip 
+unzip ne_50m_land.zip 
+unzip ne_10m_bathymetry_F_5000.zip
+unzip ne_10m_bathymetry_G_4000.zip
+unzip ne_10m_bathymetry_J_1000.zip
+unzip ne_10m_bathymetry_K_200.zip
+unzip ne_10m_bathymetry_L_0.zip 
+unzip ne_10m_ocean.zip 
+unzip ne_50m_ocean.zip 
+```
+
+### Step 2: Create a QGIS project 
+
+Run QGIS Desktop and create a new project (CTRL+N). Save the project as WorldMap_Light.qgs in the WorldMap_Light folder created earlier. 
+
+### Step 3: Add Layers in the QGIS project
+
+Add all shapefiles to the QGIS project: Layer → Add Layer → Add Vector Layer (CTRL+SHIFT+V). Choose the shapefiles in the “Data” subfolder. 
+
+### Step 4: Put the Layers in the correct order
+
+Place the layers in the correct order. From top to bottom:
+- ne_50m_rivers_lake_centerlines
+- ne_10m_coastline
+- ne_ 10m_lakes
+- ne_10m_glaciated_areas
+- ne_50m_glaciated_areas
+- ne_50m_land
+- ne_10_bathymetry_F_5000
+- ne_10_bathymetry_G_4000
+- ne_10_bathymetry_J_1000
+- ne_10_bathymetry_K_200
+- ne_10_bathymetry_L_0
+- ne_10m_ocean4
+- ne_50m_ocean
+
+### Step 5: Apply styles
+Apply styling. Properties –> Style.  Right click on the layer and select properties, or simply double click on the layer. 
+- ne_50m_rivers_lake_centerlines: Simple Line, Solid, Width: 0.260000 millimeter,  Color: #59a0ce, Transparency 40%.
+- ne_10m_coastline: Simple Line, Solid, Width: 0.260000 millimeter, Color: #b8b8b8, Transparency 50%.
+- ne_ 10m_lakes: Simple Fill, Color: #59a0ce. Set outline to transparent. 
+- ne_10m_glaciated_areas: Simple Fill, Color: #d4d9dc. Set outline to transparent. 
+- ne_50m_glaciated_areas: Simple Fill, Color: #d4d9dc. Set outline to transparent. 
+- ne_50m_land : Simple Fill, Color: #ffffff. Outline: Solid line, Color: #b8b8b8, Width: 0.260000 millimeter. 
+- ne_10_bathymetry_F_5000: Simple Fill, Color: #386f9, Transparency 40%. Set outline to transparent. 
+- ne_10_bathymetry_G_4000:  Simple Fill, Color: #427fb8. Set outline to transparent. 
+- ne_10_bathymetry_J_1000: Simple Fill, Color: #4988be. Set outline to transparent.
+- ne_10_bathymetry_K_200:  Simple Fill, Color: #5096c9. Set outline to transparent. 
+- ne_10_bathymetry_L_0: Simple Fill, Color: #59a0ce. Set outline to transparent. 
+- ne_10m_ocean: Simple Fill, Color: #59a0ce. Set outline to transparent. 
+- ne_50m_ocean: Simple Fill, Color: #59a0ce. Set outline to transparent. 
+
+### Step 6: Generate raster tiles with QTiles plugin
+
+Open the QTiles plugin: Plugins →  QTiles (CTRL+T). 
+
+Output: Select Directory to export the raster tiles as a directory structure. 
+
+Extent: Set desired geographic extent of the map: 
+	Canvas extent — current canvas extent will be used. 
+	Full extent — full extent of all project layers will be used 
+	Layer extent — output extent will be the same as extent of the selected layer 
+We will select Full extent to take into account all project layers for the generation of the tiles.
+
+Zoom: Set the zoom levels. The more zoomlevels, the more detail on the deeper zoom levels, however more tiles needed which will slow the process and which takes more size. In this case, a maximum zoom of 6 will do (5461 tiles, approximately: 54 MB). A zoom level of 9 will give a better user experience, however the total size of the tiles is approximately 1 GB. 
+
+More about zoomlevels: https://wiki.openstreetmap.org/wiki/Zoom_levels 
+
+Parameters: Set the tile size. 256X256 pixels is used for slippy maps. Choose the format: PNG. Select other wished options. Recommended is to write Leaflet-based viewer to check the result once the tiles are created. 
+
+More about slippy maps: https://en.wikipedia.org/wiki/Tiled_web_map/ 
+
+Press Run to start the tile generation. Once the process is completed, open the leaflet-based viewer QTiles.html in the browser to check if the tiles are rendered correctly.
+
+## Basemap 3: WorldMap_Canvas basemap 
+
+![alt text](https://github.com/ingmapping/Basemaps_QTiles/blob/master/WorldMap_Canvas.png)
+
+### Shapefiles used: 
+
+* 50m Physical, Rivers + lake centerlines: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_rivers_lake_centerlines.zip  (389.27 KB)
+* 10m Physical, Lakes:http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_lakes.zip (1.74 MB)
+* 10m  Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_glaciated_areas.zip (1.57 MB)
+* 50m Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_glaciated_areas.zip (211.39 KB)
+* 10m Cultural, Admin 0 – Countries: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip (5.12 MB)
+ * 10m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_land.zip (3.32 MB)
+* 50m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_land.zip (446.45 KB)
+* 10m Physical, Bathymetry 0m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_L_0.zip  (2.86 MB) 
+* 10m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_ocean.zip (3.48 MB) 
+* 50m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_ocean.zip (450.91 KB) 
+
+## Tutorial Basemap 3: WorldMap_Canvas basemap
+
+### Step 1: Download Natural Earth data 
+
+Download the shapefiles (in .zip format) from the website of Natural Earth: http://www.naturalearthdata.com/downloads/. Create a folder “WorldMap_Canvas” and a subfolder “Data”. Import the downloaded .zip files into the “Data” subfolder. Afterwards, unzip all the .zip files. 
+
+```
+mkdir -p WorldMap_Canvas/Data
+cd WorldMap_Canvas/Data
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_rivers_lake_centerlines.zip
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_lakes.zip 
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_glaciated_areas.zip 
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_glaciated_areas.zip
+wget  http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_land.zip
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_land.zip
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_L_0.zip 
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_ocean.zip 
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_ocean.zip 
+unzip ne_50m_rivers_lake_centerlines.zip 
+unzip ne_10m_lakes.zip 
+unzip ne_10m_glaciated_areas.zip 
+unzip ne_50m_glaciated_areas.zip 
+unzip ne_10m_admin_0_countries.zip
+unzip ne-10m_land.zip
+unzip ne_50m_land.zip 
+unzip ne_10m_bathymetry_L_0.zip 
+unzip ne_10m_ocean.zip 
+unzip ne_50m_ocean.zip  
+```
+
+### Step 2: Create a QGIS project 
+
+Run QGIS Desktop and create a new project (CTRL+N). Save the project as WorldMap_Canvas.qgs in the WorldMap_Canvas folder created earlier. 
+
+### Step 3: Add Layers in the QGIS project
+
+Add all shapefiles to the QGIS project: Layer → Add Layer → Add Vector Layer (CTRL+SHIFT+V). Choose the shapefiles in the “Data” subfolder. 
+
+### Step 4: Put the Layers in the correct order
+
+Place the layers in the correct order. From top to bottom:
+- ne_50m_rivers_lake_centerlines
+- ne_ 10m_lakes
+- ne_10m_glaciated_areas
+- ne_50m_glaciated_areas
+- ne_10m_admin_0_countries
+- ne_10m_land
+- ne_50m_land
+- ne_10_bathymetry_L_0
+- ne_10m_ocean
+- ne_50m_ocean
+
+### Step 5: Apply styles
+Apply styling. Properties –> Style.  Right click on the layer and select properties, or simply double click on the layer. 
+- ne_50m_rivers_lake_centerlines: Simple Line, Solid, Width: 0.260000 millimeter,  Color: #d4d9dc.
+- ne_ 10m_lakes: Simple Fill, Color: #a5bfdd, Transparency 20%. 
+- ne_10m_glaciated_areas: Simple Fill, Color: #ffffff. Set outline to transparent. 
+- ne_50m_glaciated_areas: Simple Fill, Color: #ffffff. Set outline to transparent. 
+- ne_10m_admin_0_countries: Simple Fill, Color: #fff2e6. Outline: Solid line, Color: #b3b3b3, Width: 0.260000 millimeter. 
+- ne_10m_land: Simple Fill, Color: #fff2e6. Set outline transparent.
+- ne_50m_land : Simple Fill, Color: #fff2e6. Set outline transparent.
+- ne_10_bathymetry_L_0: Simple Fill, Color: #a5bfdd. Set outline to transparent. 
+- ne_10m_ocean: Simple Fill, Color: #a5bfdd. Set outline to transparent. 
+- ne_50m_ocean: Simple Fill, Color: #a5bfdd. Set outline to transparent. 
+
+### Step 6: Generate raster tiles with QTiles plugin
+
+Open the QTiles plugin: Plugins →  QTiles (CTRL+T). 
+
+Output: Select Directory to export the raster tiles as a directory structure. 
+
+Extent: Set desired geographic extent of the map: 
+	Canvas extent — current canvas extent will be used. 
+	Full extent — full extent of all project layers will be used 
+	Layer extent — output extent will be the same as extent of the selected layer 
+We will select Full extent to take into account all project layers for the generation of the tiles.
+
+Zoom: Set the zoom levels. The more zoomlevels, the more detail on the deeper zoom levels, however more tiles needed which will slow the process and which takes more size. In this case, a maximum zoom of 6 will do (5461 tiles, approximately: 54 MB). A zoom level of 9 will give a better user experience, however the total size of the tiles is approximately 1 GB. 
+
+More about zoomlevels: https://wiki.openstreetmap.org/wiki/Zoom_levels 
+
+Parameters: Set the tile size. 256X256 pixels is used for slippy maps. Choose the format: PNG. Select other wished options. Recommended is to write Leaflet-based viewer to check the result once the tiles are created. 
+
+More about slippy maps: https://en.wikipedia.org/wiki/Tiled_web_map/ 
+
+Press Run to start the tile generation. Once the process is completed, open the leaflet-based viewer QTiles.html in the browser to check if the tiles are rendered correctly.
+
+## Basemap 4: WorldMap_GreyCanvas basemap 
+
+![alt text](https://github.com/ingmapping/Basemaps_QTiles/blob/master/WorldMap_GreyCanvas.png)
+
+### Shapefiles used: 
+
+* 50m Physical, Rivers + lake centerlines: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_rivers_lake_centerlines.zip  (389.27 KB)
+* 10m Physical, Lakes:http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_lakes.zip (1.74 MB)
+* 10m  Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_glaciated_areas.zip (1.57 MB)
+* 50m Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_glaciated_areas.zip (211.39 KB)
+* 10m Cultural, Admin 0 – Countries: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip (5.12 MB)
+ * 10m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_land.zip (3.32 MB)
+* 50m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_land.zip (446.45 KB)
+* 10m Physical, Bathymetry 0m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_L_0.zip  (2.86 MB) 
+* 10m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_ocean.zip (3.48 MB) 
+* 50m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_ocean.zip (450.91 KB) 
+
+## Tutorial Basemap 4: WorldMap_GreyCanvas basemap
+
+### Step 1: Download Natural Earth data 
+
+Download the shapefiles (in .zip format) from the website of Natural Earth: http://www.naturalearthdata.com/downloads/. Create a folder “WorldMap_GreyCanvas” and a subfolder “Data”. Import the downloaded .zip files into the “Data” subfolder. Afterwards, unzip all the .zip files. 
+
+```
+mkdir -p WorldMap_GreyCanvas/Data
+cd WorldMap_GreyCanvas/Data
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_rivers_lake_centerlines.zip
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_lakes.zip 
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_glaciated_areas.zip 
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_glaciated_areas.zip
+wget  http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_land.zip
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_land.zip
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_L_0.zip 
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_ocean.zip 
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_ocean.zip 
+unzip ne_50m_rivers_lake_centerlines.zip 
+unzip ne_10m_lakes.zip 
+unzip ne_10m_glaciated_areas.zip 
+unzip ne_50m_glaciated_areas.zip 
+unzip ne_10m_admin_0_countries.zip
+unzip ne-10m_land.zip
+unzip ne_50m_land.zip 
+unzip ne_10m_bathymetry_L_0.zip 
+unzip ne_10m_ocean.zip 
+unzip ne_50m_ocean.zip  
+```
+
+### Step 2: Create a QGIS project 
+
+Run QGIS Desktop and create a new project (CTRL+N). Save the project as WorldMap_GreyCanvas.qgs in the WorldMap_GreyCanvas folder created earlier. 
+
+### Step 3: Add Layers in the QGIS project
+
+Add all shapefiles to the QGIS project: Layer → Add Layer → Add Vector Layer (CTRL+SHIFT+V). Choose the shapefiles in the “Data” subfolder. 
+
+### Step 4: Put the Layers in the correct order
+
+Place the layers in the correct order. From top to bottom:
+- ne_50m_rivers_lake_centerlines
+- ne_ 10m_lakes
+- ne_10m_glaciated_areas
+- ne_50m_glaciated_areas
+- ne_10m_admin_0_countries
+- ne_10m_land
+- ne_50m_land
+- ne_10_bathymetry_L_0
+- ne_10m_ocean
+- ne_50m_ocean
+
+### Step 5: Apply styles
+Apply styling. Properties –> Style.  Right click on the layer and select properties, or simply double click on the layer. 
+- ne_50m_rivers_lake_centerlines: Simple Line, Solid, Width: 0.260000 millimeter,  Color: #d4d9dc, Transparency 60%.
+- ne_ 10m_lakes: Simple Fill, Color: #ffffff. Set outline to transparent. 
+- ne_10m_glaciated_areas: Simple Fill, Color: #e4e4e4. Set outline to transparent. 
+- ne_50m_glaciated_areas: Simple Fill, Color: #e4e4e4. Set outline to transparent. 
+- ne_10m_admin_0_countries: Simple Fill: Transparent. Outline: Solid line, Color: #848484, Width: 0.260000 millimeter. 
+- ne_10m_land: Simple Fill, Color: #b3b3b3. Set outline transparent.
+- ne_50m_land : Simple Fill, Color: #b3b3b3. Set outline transparent.
+- ne_10_bathymetry_L_0: Simple Fill, Color: #ffffff. Set outline to transparent. 
+- ne_10m_ocean: Simple Fill, Color: #ffffff. Set outline to transparent. 
+- ne_50m_ocean: Simple Fill, Color: #ffffff. Set outline to transparent. 
+
+### Step 6: Generate raster tiles with QTiles plugin
+
+Open the QTiles plugin: Plugins →  QTiles (CTRL+T). 
+
+Output: Select Directory to export the raster tiles as a directory structure. 
+
+Extent: Set desired geographic extent of the map: 
+	Canvas extent — current canvas extent will be used. 
+	Full extent — full extent of all project layers will be used 
+	Layer extent — output extent will be the same as extent of the selected layer 
+We will select Full extent to take into account all project layers for the generation of the tiles.
+
+Zoom: Set the zoom levels. The more zoomlevels, the more detail on the deeper zoom levels, however more tiles needed which will slow the process and which takes more size. In this case, a maximum zoom of 6 will do (5461 tiles, approximately: 54 MB). A zoom level of 9 will give a better user experience, however the total size of the tiles is approximately 1 GB. 
+
+More about zoomlevels: https://wiki.openstreetmap.org/wiki/Zoom_levels 
+
+Parameters: Set the tile size. 256X256 pixels is used for slippy maps. Choose the format: PNG. Select other wished options. Recommended is to write Leaflet-based viewer to check the result once the tiles are created. 
+
+More about slippy maps: https://en.wikipedia.org/wiki/Tiled_web_map/ 
+
+Press Run to start the tile generation. Once the process is completed, open the leaflet-based viewer QTiles.html in the browser to check if the tiles are rendered correctly.
+
+## Basemap 5: WorldMap_LightGreyCanvas basemap 
+
+![alt text](https://github.com/ingmapping/Basemaps_QTiles/blob/master/WorldMap_LightGreyCanvas.png)
+
+### Shapefiles used: 
+
+* 50m Physical, Rivers + lake centerlines: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_rivers_lake_centerlines.zip  (389.27 KB)
+* 10m Physical, Lakes:http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_lakes.zip (1.74 MB)
+* 10m  Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_glaciated_areas.zip (1.57 MB)
+* 50m Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_glaciated_areas.zip (211.39 KB)
+* 10m Cultural, Admin 0 – Countries: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip (5.12 MB)
+ * 10m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_land.zip (3.32 MB)
+* 50m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_land.zip (446.45 KB)
+* 10m Physical, Bathymetry 0m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_L_0.zip  (2.86 MB) 
+* 10m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_ocean.zip (3.48 MB) 
+* 50m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_ocean.zip (450.91 KB) 
+
+## Tutorial Basemap 5: WorldMap_LightGreyCanvas basemap
+
+### Step 1: Download Natural Earth data 
+
+Download the shapefiles (in .zip format) from the website of Natural Earth: http://www.naturalearthdata.com/downloads/. Create a folder “WorldMap_LightGreyCanvas” and a subfolder “Data”. Import the downloaded .zip files into the “Data” subfolder. Afterwards, unzip all the .zip files. 
+
+```
+mkdir -p WorldMap_LightGreyCanvas/Data
+cd WorldMap_LightGreyCanvas/Data
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_rivers_lake_centerlines.zip
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_lakes.zip 
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_glaciated_areas.zip 
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_glaciated_areas.zip
+wget  http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_land.zip
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_land.zip
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_L_0.zip 
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_ocean.zip 
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_ocean.zip 
+unzip ne_50m_rivers_lake_centerlines.zip 
+unzip ne_10m_lakes.zip 
+unzip ne_10m_glaciated_areas.zip 
+unzip ne_50m_glaciated_areas.zip 
+unzip ne_10m_admin_0_countries.zip
+unzip ne-10m_land.zip
+unzip ne_50m_land.zip 
+unzip ne_10m_bathymetry_L_0.zip 
+unzip ne_10m_ocean.zip 
+unzip ne_50m_ocean.zip  
+```
+
+### Step 2: Create a QGIS project 
+
+Run QGIS Desktop and create a new project (CTRL+N). Save the project as WorldMap_LightGreyCanvas.qgs in the WorldMap_LightGreyCanvas folder created earlier. 
+
+### Step 3: Add Layers in the QGIS project
+
+Add all shapefiles to the QGIS project: Layer → Add Layer → Add Vector Layer (CTRL+SHIFT+V). Choose the shapefiles in the “Data” subfolder. 
+
+### Step 4: Put the Layers in the correct order
+
+Place the layers in the correct order. From top to bottom:
+- ne_50m_rivers_lake_centerlines
+- ne_ 10m_lakes
+- ne_10m_glaciated_areas
+- ne_50m_glaciated_areas
+- ne_10m_admin_0_countries
+- ne_10m_land
+- ne_50m_land
+- ne_10_bathymetry_L_0
+- ne_10m_ocean
+- ne_50m_ocean
+
+### Step 5: Apply styles
+Apply styling. Properties –> Style.  Right click on the layer and select properties, or simply double click on the layer. 
+- ne_50m_rivers_lake_centerlines: Simple Line, Solid, Width: 0.260000 millimeter,  Color: #d4d9dc, Transparency 50%.
+- ne_ 10m_lakes: Simple Fill, Color: #d4d9dc. Set outline to transparent. 
+- ne_10m_glaciated_areas: Simple Fill, Color: #ffffff. Set outline to transparent. 
+- ne_50m_glaciated_areas: Simple Fill, Color: #ffffff. Set outline to transparent. 
+- ne_10m_admin_0_countries: Simple Fill, Color: #fafaf8, Transparency: 40%. Outline: Solid line, Color: #d4d9dc, Width: 0.260000 millimeter. 
+- ne_10m_land: Simple Fill, Color: #fafaf8, Transparency: 40%. Set outline transparent.
+- ne_50m_land : Simple Fill, Color: #fafaf8, Transparency: 40%. Set outline transparent.
+- ne_10_bathymetry_L_0: Simple Fill, Color: #d4d9dc. Set outline to transparent. 
+- ne_10m_ocean: Simple Fill, Color: #d4d9dc. Set outline to transparent. 
+- ne_50m_ocean: Simple Fill, Color: #d4d9dc. Set outline to transparent. 
+
+### Step 6: Generate raster tiles with QTiles plugin
+
+Open the QTiles plugin: Plugins →  QTiles (CTRL+T). 
+
+Output: Select Directory to export the raster tiles as a directory structure. 
+
+Extent: Set desired geographic extent of the map: 
+	Canvas extent — current canvas extent will be used. 
+	Full extent — full extent of all project layers will be used 
+	Layer extent — output extent will be the same as extent of the selected layer 
+We will select Full extent to take into account all project layers for the generation of the tiles.
+
+Zoom: Set the zoom levels. The more zoomlevels, the more detail on the deeper zoom levels, however more tiles needed which will slow the process and which takes more size. In this case, a maximum zoom of 6 will do (5461 tiles, approximately: 54 MB). A zoom level of 9 will give a better user experience, however the total size of the tiles is approximately 1 GB. 
+
+More about zoomlevels: https://wiki.openstreetmap.org/wiki/Zoom_levels 
+
+Parameters: Set the tile size. 256X256 pixels is used for slippy maps. Choose the format: PNG. Select other wished options. Recommended is to write Leaflet-based viewer to check the result once the tiles are created. 
+
+More about slippy maps: https://en.wikipedia.org/wiki/Tiled_web_map/ 
+
+Press Run to start the tile generation. Once the process is completed, open the leaflet-based viewer QTiles.html in the browser to check if the tiles are rendered correctly.
