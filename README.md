@@ -7,13 +7,13 @@ This project is part of an internship assignment which aimed at creating tiled b
 
 Several basemap styles were created in this project:
 
-![alt text](https://github.com/ingmapping/Basemaps_QTiles/blob/master/WorldMaps_demo.gif)
-
 1) WorldMap 
 2) WorldMap_Light
 3) WorldMap_Canvas
 4) WorldMap_GreyCanvas
 5) WorldMap_LightGreyCanvas
+
+![alt text](https://github.com/ingmapping/Basemaps_QTiles/blob/master/WorldMaps_demo.gif)
 
 About Natural Earth:
 
@@ -37,20 +37,20 @@ https://github.com/nextgis/QTiles
 
 ### Shapefiles used: 
 
-* 50m Physical, Rivers + lake centerlines: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_rivers_lake_centerlines.zip  (389.27 KB)
-* 10m Physical, Coastline (includes major islands):http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_coastline.zip
+* 50m Physical, Rivers + lake centerlines: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_rivers_lake_centerlines.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_rivers_lake_centerlines.zip (389.27 KB)
+* 10m Physical, Coastline (includes major islands):http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_coastline.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_coastline.zip
 (2.93 MB) 
-* 10m Physical, Lakes:http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_lakes.zip (1.74 MB)
-* 10m  Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_glaciated_areas.zip (1.57 MB)
-* 50m Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_glaciated_areas.zip (211.39 KB)
-* 50m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_land.zip (446.45 KB)
-* 10m Physical, Bathymetry 5000m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_F_5000.zip (2.72 MB) 
-* 10m Physical, Bathymetry 4000m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_G_4000.zip (3.43 MB)
-* 10m Physical, Bathymetry 1000m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_J_1000.zip (741.08 KB)
-* 10m Physical, Bathymetry 200m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_K_200.zip (1.14 MB) 
-* 10m Physical, Bathymetry 0m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_L_0.zip  (2.86 MB) 
-* 10m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_ocean.zip (3.48 MB) 
-* 50m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_ocean.zip (450.91 KB) 
+* 10m Physical, Lakes:http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_lakes.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_lakes.zip (1.74 MB)
+* 10m  Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_glaciated_areas.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_glaciated_areas.zip (1.57 MB)
+* 50m Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_glaciated_areas.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_glaciated_areas.zip (211.39 KB)
+* 50m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_land.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_land.zip (446.45 KB)
+* 10m Physical, Bathymetry 5000m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_F_5000.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_bathymetry_F_5000.zip (2.72 MB) 
+* 10m Physical, Bathymetry 4000m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_G_4000.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_bathymetry_G_4000.zip (3.43 MB)
+* 10m Physical, Bathymetry 1000m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_J_1000.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_bathymetry_J_1000.zip (741.08 KB)
+* 10m Physical, Bathymetry 200m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_K_200.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_bathymetry_K_200.zip (1.14 MB) 
+* 10m Physical, Bathymetry 0m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_L_0.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_bathymetry_L_0.zip (2.86 MB) 
+* 10m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_ocean.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_ocean.zip (3.48 MB) 
+* 50m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_ocean.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_ocean.zip (450.91 KB) 
 
 ## Tutorial Basemap 1: WorldMap basemap
 
@@ -168,20 +168,20 @@ Press Run to start the tile generation. Once the process is completed, open the 
 
 ### Shapefiles used: 
 
-* 50m Physical, Rivers + lake centerlines: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_rivers_lake_centerlines.zip  (389.27 KB)
-* 10m Physical, Coastline (includes major islands):http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_coastline.zip
+* 50m Physical, Rivers + lake centerlines: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_rivers_lake_centerlines.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_rivers_lake_centerlines.zip (389.27 KB)
+* 10m Physical, Coastline (includes major islands):http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_coastline.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_coastline.zip
 (2.93 MB) 
-* 10m Physical, Lakes:http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_lakes.zip (1.74 MB)
-* 10m  Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_glaciated_areas.zip (1.57 MB)
-* 50m Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_glaciated_areas.zip (211.39 KB)
-* 50m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_land.zip (446.45 KB)
-* 10m Physical, Bathymetry 5000m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_F_5000.zip (2.72 MB) 
-* 10m Physical, Bathymetry 4000m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_G_4000.zip (3.43 MB)
-* 10m Physical, Bathymetry 1000m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_J_1000.zip (741.08 KB)
-* 10m Physical, Bathymetry 200m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_K_200.zip (1.14 MB) 
-* 10m Physical, Bathymetry 0m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_L_0.zip  (2.86 MB) 
-* 10m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_ocean.zip (3.48 MB) 
-* 50m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_ocean.zip (450.91 KB) 
+* 10m Physical, Lakes:http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_lakes.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_lakes.zip (1.74 MB)
+* 10m  Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_glaciated_areas.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_glaciated_areas.zip (1.57 MB)
+* 50m Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_glaciated_areas.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_glaciated_areas.zip (211.39 KB)
+* 50m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_land.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_land.zip (446.45 KB)
+* 10m Physical, Bathymetry 5000m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_F_5000.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_bathymetry_F_5000.zip (2.72 MB) 
+* 10m Physical, Bathymetry 4000m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_G_4000.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_bathymetry_G_4000.zip (3.43 MB)
+* 10m Physical, Bathymetry 1000m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_J_1000.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_bathymetry_J_1000.zip (741.08 KB)
+* 10m Physical, Bathymetry 200m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_K_200.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_bathymetry_K_200.zip (1.14 MB) 
+* 10m Physical, Bathymetry 0m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_L_0.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_bathymetry_L_0.zip (2.86 MB) 
+* 10m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_ocean.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_ocean.zip (3.48 MB) 
+* 50m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_ocean.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_ocean.zip (450.91 KB) 
 
 ## Tutorial Basemap 2: WorldMap_Light basemap
 
@@ -331,7 +331,7 @@ wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_lakes.zip 
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_glaciated_areas.zip 
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_glaciated_areas.zip
-wget  http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_land.zip
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_land.zip
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_L_0.zip 
@@ -445,7 +445,7 @@ wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_lakes.zip 
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_glaciated_areas.zip 
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_glaciated_areas.zip
-wget  http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_land.zip
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_land.zip
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_L_0.zip 
@@ -559,7 +559,7 @@ wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_lakes.zip 
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_glaciated_areas.zip 
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_glaciated_areas.zip
-wget  http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_land.zip
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_land.zip
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_L_0.zip 
