@@ -6,6 +6,9 @@ About the project:
 This project is part of an internship assignment which aimed at creating tiled basemaps for the KNMI geospatial infrastructure. The data and tools used to create the basemaps are open-source. Therefore, this project and the basemaps are reproducible for everyone who wants to create simple basemaps (raster tiled basemaps) from free vector data! 
 
 Several basemap styles were created in this project:
+
+![alt text](https://github.com/ingmapping/Basemaps_QTiles/blob/master/WorldMaps_demo.gif)
+
 1) WorldMap 
 2) WorldMap_Light
 3) WorldMap_Canvas
