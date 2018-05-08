@@ -36,30 +36,18 @@ https://github.com/nextgis/QTiles
 ### Shapefiles used: 
 
 * 50m Physical, Rivers + lake centerlines: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_rivers_lake_centerlines.zip  (389.27 KB)
-
 * 10m Physical, Coastline (includes major islands):http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_coastline.zip
 (2.93 MB) 
-
 * 10m Physical, Lakes:http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_lakes.zip (1.74 MB)
-
 * 10m  Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_glaciated_areas.zip (1.57 MB)
-
 * 50m Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_glaciated_areas.zip (211.39 KB)
-
 * 50m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_land.zip (446.45 KB)
-
 * 10m Physical, Bathymetry 5000m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_F_5000.zip (2.72 MB) 
-
 * 10m Physical, Bathymetry 4000m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_G_4000.zip (3.43 MB)
-
 * 10m Physical, Bathymetry 1000m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_J_1000.zip (741.08 KB)
-
 * 10m Physical, Bathymetry 200m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_K_200.zip (1.14 MB) 
-
 * 10m Physical, Bathymetry 0m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_L_0.zip  (2.86 MB) 
-
 * 10m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_ocean.zip (3.48 MB) 
-
 * 50m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_ocean.zip (450.91 KB) 
 
 ## Tutorial Basemap 1: WorldMap basemap
