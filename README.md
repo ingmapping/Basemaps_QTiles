@@ -132,7 +132,7 @@ Apply styling. Properties –> Style.  Right click on the layer and select prope
 - ne_10m_glaciated_areas: Simple Fill, Color: #ffffff. Set outline to transparent. 
 - ne_50m_glaciated_areas: Simple Fill, Color: #ffffff. Set outline to transparent. 
 - ne_50m_land : Simple Fill, Color: #329b3f. Outline: Solid line, Color: #b8b8b8, Width: 0.260000 millimeter. 
-- ne_10_bathymetry_F_5000: Simple Fill, Color: #386f9, Transparency 40%. Set outline to transparent. 
+- ne_10_bathymetry_F_5000: Simple Fill, Color: #386f9f, Transparency 40%. Set outline to transparent. 
 - ne_10_bathymetry_G_4000:  Simple Fill, Color: #427fb8. Set outline to transparent. 
 - ne_10_bathymetry_J_1000: Simple Fill, Color: #4988be. Set outline to transparent.
 - ne_10_bathymetry_K_200:  Simple Fill, Color: #5096c9. Set outline to transparent. 
@@ -262,7 +262,7 @@ Apply styling. Properties –> Style.  Right click on the layer and select prope
 - ne_10m_glaciated_areas: Simple Fill, Color: #d4d9dc. Set outline to transparent. 
 - ne_50m_glaciated_areas: Simple Fill, Color: #d4d9dc. Set outline to transparent. 
 - ne_50m_land : Simple Fill, Color: #ffffff. Outline: Solid line, Color: #b8b8b8, Width: 0.260000 millimeter. 
-- ne_10_bathymetry_F_5000: Simple Fill, Color: #386f9, Transparency 40%. Set outline to transparent. 
+- ne_10_bathymetry_F_5000: Simple Fill, Color: #386f9f, Transparency 40%. Set outline to transparent. 
 - ne_10_bathymetry_G_4000:  Simple Fill, Color: #427fb8. Set outline to transparent. 
 - ne_10_bathymetry_J_1000: Simple Fill, Color: #4988be. Set outline to transparent.
 - ne_10_bathymetry_K_200:  Simple Fill, Color: #5096c9. Set outline to transparent. 
