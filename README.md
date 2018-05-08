@@ -342,7 +342,7 @@ unzip ne_10m_lakes.zip
 unzip ne_10m_glaciated_areas.zip 
 unzip ne_50m_glaciated_areas.zip 
 unzip ne_10m_admin_0_countries.zip
-unzip ne-10m_land.zip
+unzip ne_10m_land.zip
 unzip ne_50m_land.zip 
 unzip ne_10m_bathymetry_L_0.zip 
 unzip ne_10m_ocean.zip 
@@ -456,7 +456,7 @@ unzip ne_10m_lakes.zip
 unzip ne_10m_glaciated_areas.zip 
 unzip ne_50m_glaciated_areas.zip 
 unzip ne_10m_admin_0_countries.zip
-unzip ne-10m_land.zip
+unzip ne_10m_land.zip
 unzip ne_50m_land.zip 
 unzip ne_10m_bathymetry_L_0.zip 
 unzip ne_10m_ocean.zip 
@@ -570,7 +570,7 @@ unzip ne_10m_lakes.zip
 unzip ne_10m_glaciated_areas.zip 
 unzip ne_50m_glaciated_areas.zip 
 unzip ne_10m_admin_0_countries.zip
-unzip ne-10m_land.zip
+unzip ne_10m_land.zip
 unzip ne_50m_land.zip 
 unzip ne_10m_bathymetry_L_0.zip 
 unzip ne_10m_ocean.zip 
