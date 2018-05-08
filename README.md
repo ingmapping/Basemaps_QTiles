@@ -54,6 +54,15 @@ https://github.com/nextgis/QTiles
 
 ## Tutorial Basemap 1: WorldMap basemap
 
+Step 1 to 5 can be skipped when cloning this repository and opening the QGIS project (WorldMap.qgs) directly.
+
+First clone this repository
+
+```
+git clone https://github.com/ingmapping/Basemaps_QTiles.git
+```
+Afterwards, open the QGIS project (Worldmap.qgs) and proceed to step 6. 
+
 ### Step 1: Download Natural Earth data 
 
 Download the shapefiles (in .zip format) from the website of Natural Earth: http://www.naturalearthdata.com/downloads/. Create a folder “WorldMap” and a subfolder “Data”. Import the downloaded .zip files into the “Data” subfolder. Afterwards, unzip all the .zip files. 
@@ -176,6 +185,15 @@ Press Run to start the tile generation. Once the process is completed, open the 
 
 ## Tutorial Basemap 2: WorldMap_Light basemap
 
+Step 1 to 5 can be skipped when cloning this repository and opening the QGIS project (WorldMap_Light.qgs) directly.
+
+First clone this repository
+
+```
+git clone https://github.com/ingmapping/Basemaps_QTiles.git
+```
+Afterwards, open the QGIS project (Worldmap_Light.qgs) and proceed to step 6. 
+
 ### Step 1: Download Natural Earth data 
 
 Download the shapefiles (in .zip format) from the website of Natural Earth: http://www.naturalearthdata.com/downloads/. Create a folder “WorldMap_Light” and a subfolder “Data”. Import the downloaded .zip files into the “Data” subfolder. Afterwards, unzip all the .zip files. 
@@ -293,6 +311,15 @@ Press Run to start the tile generation. Once the process is completed, open the 
 
 ## Tutorial Basemap 3: WorldMap_Canvas basemap
 
+Step 1 to 5 can be skipped when cloning this repository and opening the QGIS project (WorldMap_Canvas.qgs) directly.
+
+First clone this repository
+
+```
+git clone https://github.com/ingmapping/Basemaps_QTiles.git
+```
+Afterwards, open the QGIS project (Worldmap_Canvas.qgs) and proceed to step 6. 
+
 ### Step 1: Download Natural Earth data 
 
 Download the shapefiles (in .zip format) from the website of Natural Earth: http://www.naturalearthdata.com/downloads/. Create a folder “WorldMap_Canvas” and a subfolder “Data”. Import the downloaded .zip files into the “Data” subfolder. Afterwards, unzip all the .zip files. 
@@ -398,6 +425,15 @@ Press Run to start the tile generation. Once the process is completed, open the 
 
 ## Tutorial Basemap 4: WorldMap_GreyCanvas basemap
 
+Step 1 to 5 can be skipped when cloning this repository and opening the QGIS project (WorldMap_GreyCanvas.qgs) directly.
+
+First clone this repository
+
+```
+git clone https://github.com/ingmapping/Basemaps_QTiles.git
+```
+Afterwards, open the QGIS project (Worldmap_GreyCanvas.qgs) and proceed to step 6. 
+
 ### Step 1: Download Natural Earth data 
 
 Download the shapefiles (in .zip format) from the website of Natural Earth: http://www.naturalearthdata.com/downloads/. Create a folder “WorldMap_GreyCanvas” and a subfolder “Data”. Import the downloaded .zip files into the “Data” subfolder. Afterwards, unzip all the .zip files. 
@@ -502,6 +538,15 @@ Press Run to start the tile generation. Once the process is completed, open the 
 * 50m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_ocean.zip (450.91 KB) 
 
 ## Tutorial Basemap 5: WorldMap_LightGreyCanvas basemap
+
+Step 1 to 5 can be skipped when cloning this repository and opening the QGIS project (WorldMap_LightGreyCanvas.qgs) directly.
+
+First clone this repository
+
+```
+git clone https://github.com/ingmapping/Basemaps_QTiles.git
+```
+Afterwards, open the QGIS project (Worldmap_LightGreyCanvas.qgs) and proceed to step 6. 
 
 ### Step 1: Download Natural Earth data 
 
