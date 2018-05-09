@@ -152,7 +152,7 @@ Extent: Set desired geographic extent of the map:
 	Layer extent — output extent will be the same as extent of the selected layer 
 We will select Full extent to take into account all project layers for the generation of the tiles.
 
-Zoom: Set the zoom levels. The more zoomlevels, the more detail on the deeper zoom levels, however more tiles needed which will slow the process and which takes more size. In this case, a maximum zoom of 6 will do (5461 tiles, approximately: 54 MB). A zoom level of 9 will give a better user experience, however the total size of the tiles is approximately 1 GB. 
+Zoom: Set the zoom levels. The more zoomlevels, the more detail on the deeper zoom levels, however more tiles needed which will slow the process and which takes more size. In this case, a maximum zoom level of 6 will do (5461 tiles, approximately: 54 MB). A maximum zoom level of 9 will give a better user experience, however the total size of the tiles is approximately 1 GB. 
 
 More about zoomlevels: https://wiki.openstreetmap.org/wiki/Zoom_levels 
 
@@ -282,7 +282,7 @@ Extent: Set desired geographic extent of the map:
 	Layer extent — output extent will be the same as extent of the selected layer 
 We will select Full extent to take into account all project layers for the generation of the tiles.
 
-Zoom: Set the zoom levels. The more zoomlevels, the more detail on the deeper zoom levels, however more tiles needed which will slow the process and which takes more size. In this case, a maximum zoom of 6 will do (5461 tiles, approximately: 54 MB). A zoom level of 9 will give a better user experience, however the total size of the tiles is approximately 1 GB. 
+Zoom: Set the zoom levels. The more zoomlevels, the more detail on the deeper zoom levels, however more tiles needed which will slow the process and which takes more size. In this case, a maximum zoom level of 6 will do (5461 tiles, approximately: 54 MB). A maximum zoom level of 9 will give a better user experience, however the total size of the tiles is approximately 1 GB. 
 
 More about zoomlevels: https://wiki.openstreetmap.org/wiki/Zoom_levels 
 
@@ -303,7 +303,8 @@ Press Run to start the tile generation. Once the process is completed, open the 
 * 10m  Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_glaciated_areas.zip or or http://naciscdn.org/naturalearth/10m/physical/ne_10m_glaciated_areas.zip (1.57 MB)
 * 50m Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_glaciated_areas.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_glaciated_areas.zip (211.39 KB)
 * 10m Cultural, Admin 0 – Countries: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip or http://naciscdn.org/naturalearth/10m/cultural/ne_10m_admin_0_countries.zip (5.12 MB)
- * 10m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_land.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_land.zip (3.32 MB)
+* 10m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_land.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_land.zip (3.32 MB)
+* 50m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_land.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_land.zip (446.45 KB)
 * 10m Physical, Bathymetry 0m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_L_0.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_bathymetry_L_0.zip (2.86 MB) 
 * 10m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_ocean.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_ocean.zip (3.48 MB) 
 * 50m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_ocean.zip or or http://naciscdn.org/naturalearth/50m/physical/ne_50m_ocean.zip (450.91 KB) 
@@ -332,6 +333,7 @@ wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_glaciated_areas.zip
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_land.zip
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_land.zip
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_L_0.zip 
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_ocean.zip 
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_ocean.zip 
@@ -341,6 +343,7 @@ unzip ne_10m_glaciated_areas.zip
 unzip ne_50m_glaciated_areas.zip 
 unzip ne_10m_admin_0_countries.zip
 unzip ne_10m_land.zip
+unzip ne_50m_land.zip
 unzip ne_10m_bathymetry_L_0.zip 
 unzip ne_10m_ocean.zip 
 unzip ne_50m_ocean.zip  
@@ -363,6 +366,7 @@ Place the layers in the correct order. From top to bottom:
 - ne_50m_glaciated_areas
 - ne_10m_admin_0_countries
 - ne_10m_land
+- ne_50m_land
 - ne_10_bathymetry_L_0
 - ne_10m_ocean
 - ne_50m_ocean
@@ -373,8 +377,9 @@ Apply styling. Properties –> Style.  Right click on the layer and select prope
 - ne_ 10m_lakes: Simple Fill, Color: #a5bfdd, Transparency 20%. Set outline to transparent.
 - ne_10m_glaciated_areas: Simple Fill, Color: #ffffff. Set outline to transparent. 
 - ne_50m_glaciated_areas: Simple Fill, Color: #ffffff. Set outline to transparent. 
-- ne_10m_admin_0_countries: Simple Fill, Color: #fff2e6. Outline: Solid line, Color: #b3b3b3, Width: 0.260000 millimeter. 
+- ne_10m_admin_0_countries: Simple Fill, Color: #fff2e6. Outline: Solid line, Color: #b3b3b3, Width: 0.260000 millimeter. Optional: Set scale visibility for this layer. Minimum (exclusive) 1:25,000,000, Maximum (inclusive) 1:2,000,000. 
 - ne_10m_land: Simple Fill, Color: #fff2e6. Set outline transparent.
+- ne_50m_land: Simple Fill, Color: #fff2e6. Set outline transparent.
 - ne_10_bathymetry_L_0: Simple Fill, Color: #a5bfdd. Set outline to transparent. 
 - ne_10m_ocean: Simple Fill, Color: #a5bfdd. Set outline to transparent. 
 - ne_50m_ocean: Simple Fill, Color: #a5bfdd. Set outline to transparent. 
@@ -391,7 +396,7 @@ Extent: Set desired geographic extent of the map:
 	Layer extent — output extent will be the same as extent of the selected layer 
 We will select Full extent to take into account all project layers for the generation of the tiles.
 
-Zoom: Set the zoom levels. The more zoomlevels, the more detail on the deeper zoom levels, however more tiles needed which will slow the process and which takes more size. In this case, a maximum zoom of 6 will do (5461 tiles, approximately: 54 MB). A zoom level of 9 will give a better user experience, however the total size of the tiles is approximately 1 GB. 
+Zoom: Set the zoom levels. The more zoomlevels, the more detail on the deeper zoom levels, however more tiles needed which will slow the process and which takes more size. In this case, a maximum zoom level of 6 will do (5461 tiles, approximately: 54 MB). A maximum zoom level of 9 will give a better user experience, however the total size of the tiles is approximately 1 GB.  
 
 More about zoomlevels: https://wiki.openstreetmap.org/wiki/Zoom_levels 
 
@@ -412,7 +417,8 @@ Press Run to start the tile generation. Once the process is completed, open the 
 * 10m  Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_glaciated_areas.zip or or http://naciscdn.org/naturalearth/10m/physical/ne_10m_glaciated_areas.zip (1.57 MB)
 * 50m Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_glaciated_areas.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_glaciated_areas.zip (211.39 KB)
 * 10m Cultural, Admin 0 – Countries: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip or http://naciscdn.org/naturalearth/10m/cultural/ne_10m_admin_0_countries.zip (5.12 MB)
- * 10m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_land.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_land.zip (3.32 MB)
+* 10m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_land.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_land.zip (3.32 MB)
+* 50m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_land.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_land.zip (446.45 KB)
 * 10m Physical, Bathymetry 0m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_L_0.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_bathymetry_L_0.zip (2.86 MB) 
 * 10m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_ocean.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_ocean.zip (3.48 MB) 
 * 50m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_ocean.zip or or http://naciscdn.org/naturalearth/50m/physical/ne_50m_ocean.zip (450.91 KB) 
@@ -441,6 +447,7 @@ wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_glaciated_areas.zip
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_land.zip
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_land.zip
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_L_0.zip 
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_ocean.zip 
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_ocean.zip 
@@ -450,6 +457,7 @@ unzip ne_10m_glaciated_areas.zip
 unzip ne_50m_glaciated_areas.zip 
 unzip ne_10m_admin_0_countries.zip
 unzip ne_10m_land.zip
+unzip ne_50m_land.zip
 unzip ne_10m_bathymetry_L_0.zip 
 unzip ne_10m_ocean.zip 
 unzip ne_50m_ocean.zip  
@@ -472,6 +480,7 @@ Place the layers in the correct order. From top to bottom:
 - ne_50m_glaciated_areas
 - ne_10m_admin_0_countries
 - ne_10m_land
+- ne_50m_land
 - ne_10_bathymetry_L_0
 - ne_10m_ocean
 - ne_50m_ocean
@@ -482,8 +491,9 @@ Apply styling. Properties –> Style.  Right click on the layer and select prope
 - ne_ 10m_lakes: Simple Fill, Color: #ffffff. Set outline to transparent. 
 - ne_10m_glaciated_areas: Simple Fill, Color: #e4e4e4. Set outline to transparent. 
 - ne_50m_glaciated_areas: Simple Fill, Color: #e4e4e4. Set outline to transparent. 
-- ne_10m_admin_0_countries: Simple Fill: Transparent. Outline: Solid line, Color: #848484, Width: 0.260000 millimeter. 
+- ne_10m_admin_0_countries: Simple Fill: Transparent. Outline: Solid line, Color: #848484, Width: 0.260000 millimeter. Optional: Set scale visibility for this layer. Minimum (exclusive) 1:25,000,000, Maximum (inclusive) 1:2,000,000. 
 - ne_10m_land: Simple Fill, Color: #b3b3b3. Set outline transparent.
+- ne_50m_land: Simple Fill, Color: #b3b3b3. Set outline transparent.
 - ne_10_bathymetry_L_0: Simple Fill, Color: #ffffff. Set outline to transparent. 
 - ne_10m_ocean: Simple Fill, Color: #ffffff. Set outline to transparent. 
 - ne_50m_ocean: Simple Fill, Color: #ffffff. Set outline to transparent. 
@@ -500,7 +510,7 @@ Extent: Set desired geographic extent of the map:
 	Layer extent — output extent will be the same as extent of the selected layer 
 We will select Full extent to take into account all project layers for the generation of the tiles.
 
-Zoom: Set the zoom levels. The more zoomlevels, the more detail on the deeper zoom levels, however more tiles needed which will slow the process and which takes more size. In this case, a maximum zoom of 6 will do (5461 tiles, approximately: 54 MB). A zoom level of 9 will give a better user experience, however the total size of the tiles is approximately 1 GB. 
+Zoom: Set the zoom levels. The more zoomlevels, the more detail on the deeper zoom levels, however more tiles needed which will slow the process and which takes more size. In this case, a maximum zoom level of 6 will do (5461 tiles, approximately: 54 MB). A maximum zoom level of 9 will give a better user experience, however the total size of the tiles is approximately 1 GB.  
 
 More about zoomlevels: https://wiki.openstreetmap.org/wiki/Zoom_levels 
 
@@ -521,7 +531,8 @@ Press Run to start the tile generation. Once the process is completed, open the 
 * 10m  Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_glaciated_areas.zip or or http://naciscdn.org/naturalearth/10m/physical/ne_10m_glaciated_areas.zip (1.57 MB)
 * 50m Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_glaciated_areas.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_glaciated_areas.zip (211.39 KB)
 * 10m Cultural, Admin 0 – Countries: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip or http://naciscdn.org/naturalearth/10m/cultural/ne_10m_admin_0_countries.zip (5.12 MB)
- * 10m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_land.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_land.zip (3.32 MB)
+* 10m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_land.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_land.zip (3.32 MB)
+* 50m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_land.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_land.zip (446.45 KB)
 * 10m Physical, Bathymetry 0m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_L_0.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_bathymetry_L_0.zip (2.86 MB) 
 * 10m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_ocean.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_ocean.zip (3.48 MB) 
 * 50m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_ocean.zip or or http://naciscdn.org/naturalearth/50m/physical/ne_50m_ocean.zip (450.91 KB) 
@@ -550,6 +561,7 @@ wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_glaciated_areas.zip
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_land.zip
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_land.zip
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_L_0.zip 
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_ocean.zip 
 wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_ocean.zip 
@@ -558,7 +570,8 @@ unzip ne_10m_lakes.zip
 unzip ne_10m_glaciated_areas.zip 
 unzip ne_50m_glaciated_areas.zip 
 unzip ne_10m_admin_0_countries.zip
-unzip ne_10m_land.zip 
+unzip ne_10m_land.zip
+unzip ne_50m_land.zip
 unzip ne_10m_bathymetry_L_0.zip 
 unzip ne_10m_ocean.zip 
 unzip ne_50m_ocean.zip  
@@ -581,6 +594,7 @@ Place the layers in the correct order. From top to bottom:
 - ne_50m_glaciated_areas
 - ne_10m_admin_0_countries
 - ne_10m_land
+- ne_50m_land
 - ne_10_bathymetry_L_0
 - ne_10m_ocean
 - ne_50m_ocean
@@ -591,8 +605,9 @@ Apply styling. Properties –> Style.  Right click on the layer and select prope
 - ne_ 10m_lakes: Simple Fill, Color: #d4d9dc. Set outline to transparent. 
 - ne_10m_glaciated_areas: Simple Fill, Color: #ffffff. Set outline to transparent. 
 - ne_50m_glaciated_areas: Simple Fill, Color: #ffffff. Set outline to transparent. 
-- ne_10m_admin_0_countries: Simple Fill, Color: #fafaf8, Transparency: 40%. Outline: Solid line, Color: #d4d9dc, Width: 0.260000 millimeter. 
+- ne_10m_admin_0_countries: Simple Fill, Color: #fafaf8, Transparency: 40%. Outline: Solid line, Color: #d4d9dc, Width: 0.260000 millimeter. Optional: Set scale visibility for this layer. Minimum (exclusive) 1:25,000,000, Maximum (inclusive) 1:2,000,000. 
 - ne_10m_land: Simple Fill, Color: #fafaf8, Transparency: 40%. Set outline transparent.
+- ne_50m_land: Simple Fill, Color: #fafaf8, Transparency: 40%. Set outline transparent.
 - ne_10_bathymetry_L_0: Simple Fill, Color: #d4d9dc. Set outline to transparent. 
 - ne_10m_ocean: Simple Fill, Color: #d4d9dc. Set outline to transparent. 
 - ne_50m_ocean: Simple Fill, Color: #d4d9dc. Set outline to transparent. 
@@ -609,7 +624,7 @@ Extent: Set desired geographic extent of the map:
 	Layer extent — output extent will be the same as extent of the selected layer 
 We will select Full extent to take into account all project layers for the generation of the tiles.
 
-Zoom: Set the zoom levels. The more zoomlevels, the more detail on the deeper zoom levels, however more tiles needed which will slow the process and which takes more size. In this case, a maximum zoom of 6 will do (5461 tiles, approximately: 54 MB). A zoom level of 9 will give a better user experience, however the total size of the tiles is approximately 1 GB. 
+Zoom: Set the zoom levels. The more zoomlevels, the more detail on the deeper zoom levels, however more tiles needed which will slow the process and which takes more size. In this case, a maximum zoom level of 6 will do (5461 tiles, approximately: 54 MB). A maximum zoom level of 9 will give a better user experience, however the total size of the tiles is approximately 1 GB. 
 
 More about zoomlevels: https://wiki.openstreetmap.org/wiki/Zoom_levels 
 
