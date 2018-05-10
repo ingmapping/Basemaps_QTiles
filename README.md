@@ -48,6 +48,14 @@ https://github.com/nextgis/QTiles
 
 ## Demo
 
+A demo viewer is available at https://tileserver.ingmapping.com/ 
+
+* WorldMap: [demo](https://tileserver.ingmapping.com/#WorldMap/ol3).
+* WorldMap_Light: [demo](https://tileserver.ingmapping.com/#WorldMap_Light/ol3).
+* WorldMap_Canvas: [demo](https://tileserver.ingmapping.com/#WorldMap_Canvas/ol3).
+* WorldMap_GreyCanvas: [demo](https://tileserver.ingmapping.com/#WorldMap_GreyCanvas/ol3).
+* WorldMap_LightGreyCanvas: [demo](https://tileserver.ingmapping.com/#WorldMap_LightGreyCanvas/ol3).
+
 ## How to use it
 
 You use the pre-generated tiled basemaps using various JavaScript libraries or desktop GIS. For example:
@@ -61,7 +69,7 @@ L.tileLayer('https://tileserver.ingmapping.com/worldmap/{z}/{x}/{y}.png', {
 	}).addTo(map);
 ```
 
-Have a look at this [simple working example](https://github.com/ingmapping/Basemaps_QTiles/blob/master/examples/leaflet-demo.html).
+Have a look at this [simple working example](https://github.com/ingmapping/Basemaps_QTiles/blob/master/examples/leaflet.html).
 
 ### Download tiles
 
