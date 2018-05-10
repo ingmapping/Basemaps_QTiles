@@ -41,11 +41,11 @@ https://github.com/nextgis/QTiles
 	* [Download tiles](#download-tiles)
 	* [Endpoints](#endpoints)
 	* [How to use endpoints](#how-to-use-endpoints)
-* [Tutorial Basemap 1: Generating WorldMap tiles](#Tutorial-Basemap-1-Generating-WorldMap-tiles) 
-* [Tutorial Basemap 2: Generating WorldMap_Light tiles](#Tutorial-Basemap-2-Generating-WorldMap-tiles) 
-* [Tutorial Basemap 3: Generating WorldMap_Canvas tiles](#Tutorial-Basemap-3-Generating-WorldMap-tiles) 
-* [Tutorial Basemap 4: Generating WorldMap_GreyCanvas tiles](#Tutorial-Basemap-4-Generating-WorldMap-tiles) 
-* [Tutorial Basemap 5: Generating WorldMap_LightGreyCanvas tiles](#Tutorial-Basemap-5-Generating-WorldMap-tiles) 
+* [Tutorial Basemap 1: Generating WorldMap tiles](#Tutorial-Basemap-1:-Generating-WorldMap-tiles) 
+* [Tutorial Basemap 2: Generating WorldMap_Light tiles](#Tutorial-Basemap-2:-Generating-WorldMap-tiles) 
+* [Tutorial Basemap 3: Generating WorldMap_Canvas tiles](#Tutorial-Basemap-3:-Generating-WorldMap-tiles) 
+* [Tutorial Basemap 4: Generating WorldMap_GreyCanvas tiles](#Tutorial-Basemap-4:-Generating-WorldMap-tiles) 
+* [Tutorial Basemap 5: Generating WorldMap_LightGreyCanvas tiles](#Tutorial-Basemap-5:-Generating-WorldMap-tiles) 
 
 ## Demo
 
@@ -60,23 +60,16 @@ You can download the pre-generated tiles (saved as directory structure or as .mb
 ### Endpoints
 
 ### How to use endpoints
-[Mapox-GL.js](https://www.mapbox.com/mapbox-gl-js/api/) is a JavaScript library that uses WebGL to render vector tiles.
-
-The `achtergrond.json` meets the [Mapbox GL Style Spec](https://www.mapbox.com/mapbox-gl-js/style-spec).
-
-To set up a map with the PDOK vector tiles and `achtergrond.json` you just need to refer to `style: 'https://geodata.nationaalgeoregister.nl/beta/topotiles-viewer/styles/achtergrond.json'`
-
+[Leaflet JS](https://leafletjs.com/) is a lightweight open-source JavaScript library for building interactive web maps.
 
 ```js
-var map = new mapboxgl.Map({
-    container: 'map-container',
-    style: 'https://geodata.nationaalgeoregister.nl/beta/topotiles-viewer/styles/achtergrond.json',
-    zoom: 11,
-    center: [ 4.8, 52.4]
-});
+L.tileLayer('https://tileserver.ingmapping.com/worldmap/{z}/{x}/{y}.png', {
+		maxZoom: 6,
+		attribution: '<a href="https://github.com/ingmapping/Basemaps_QTiles/">WorldMap from Natural Earth data generated with QTiles in QGIS</a> - <a href="https:// 	www.ingmapping.com">ingmapping.com</a>'
+	}).addTo(map);
 ```
 
-Have a look at this [simple working example](https://github.com/PDOK/vectortiles-bgt-brt/blob/master/examples/mapbox_map.html).
+Have a look at this [simple working example](https://github.com/ingmapping/Basemaps_QTiles/blob/master/examples/leaflet-demo.html).
 
 ## Tutorial Basemap 1: Generating WorldMap tiles 
 
