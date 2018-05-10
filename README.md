@@ -41,7 +41,7 @@ https://github.com/nextgis/QTiles
 	* [Download tiles](#download-tiles)
 	* [Endpoints](#endpoints)
 	* [How to use endpoints](#how-to-use-endpoints)
-* [Tutorial Basemap 1: Generating WorldMap tiles](#Tutorial-Basemap-1:-Generating-WorldMap-tiles) 
+* [Tutorial Basemap 1: Generating WorldMap tiles](#Tutorial Basemap 1: Generating WorldMap tiles) 
 * [Tutorial Basemap 2: Generating WorldMap_Light tiles](#Tutorial-Basemap-2:-Generating-WorldMap-tiles) 
 * [Tutorial Basemap 3: Generating WorldMap_Canvas tiles](#Tutorial-Basemap-3:-Generating-WorldMap-tiles) 
 * [Tutorial Basemap 4: Generating WorldMap_GreyCanvas tiles](#Tutorial-Basemap-4:-Generating-WorldMap-tiles) 
@@ -51,25 +51,31 @@ https://github.com/nextgis/QTiles
 
 ## How to use it
 
-You use the pre-generated tiled basemaps using various JavaScript libraries or desktop GIS. 
+You use the pre-generated tiled basemaps using various JavaScript libraries or desktop GIS. For example:
 
-### Download tiles
-
-You can download the pre-generated tiles (saved as directory structure or as .mbtiles). 
-
-### Endpoints
-
-### How to use endpoints
-[Leaflet JS](https://leafletjs.com/) is a lightweight open-source JavaScript library for building interactive web maps.
+* [Leaflet JS](https://leafletjs.com/) is a lightweight open-source JavaScript library for building interactive web maps.
 
 ```js
 L.tileLayer('https://tileserver.ingmapping.com/worldmap/{z}/{x}/{y}.png', {
 		maxZoom: 6,
-		attribution: '<a href="https://github.com/ingmapping/Basemaps_QTiles/">WorldMap from Natural Earth data generated with QTiles in QGIS</a> - <a href="https:// 	www.ingmapping.com">ingmapping.com</a>'
+		attribution: '<a href="https://github.com/ingmapping/Basemaps_QTiles/">WorldMap from Natural Earth data generated with QTiles in QGIS</a> - <a href="https://www.ingmapping.com">ingmapping.com</a>'
 	}).addTo(map);
 ```
 
 Have a look at this [simple working example](https://github.com/ingmapping/Basemaps_QTiles/blob/master/examples/leaflet-demo.html).
+
+### Download tiles
+
+You can also download the pre-generated tiles (saved as directory structure or as .mbtiles). 
+
+### Endpoints
+
+* Raw tile endpoints:
+	- WorldMap: `https://tileserver.ingmapping.com/worldmap/{z}/{x}/{y}.png`
+	- WorldMap_Light: `https://tileserver.ingmapping.com/worldmap_light/{z}/{x}/{y}.png`
+	- WorldMap_Canvas: `https://tileserver.ingmapping.com/worldmap_canvas/{z}/{x}/{y}.png`
+	- WorldMap_GreyCanvas: `https://tileserver.ingmapping.com/worldmap_greycanvas/{z}/{x}/{y}.png`
+	- WorldMap_LightGreyCanvas : `https://tileserver.ingmapping.com/worldmap_lightgreycanvas/{z}/{x}/{y}.png`
 
 ## Tutorial Basemap 1: Generating WorldMap tiles 
 
