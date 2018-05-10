@@ -40,11 +40,11 @@ https://github.com/nextgis/QTiles
 * [How to use it](#how-to-use-it)
 	* [Download tiles](#download-tiles)
 	* [Endpoints](#endpoints)
-* [Tutorial Basemap 1: Generating WorldMap tiles](#Tutorial-Basemap-1-Generating-WorldMap-tiles) 
-* [Tutorial Basemap 2: Generating WorldMap_Light tiles](#Tutorial-Basemap-2-Generating-WorldMap_Light-tiles) 
-* [Tutorial Basemap 3: Generating WorldMap_Canvas tiles](#Tutorial-Basemap-3-Generating-WorldMap-tiles) 
-* [Tutorial Basemap 4: Generating WorldMap_GreyCanvas tiles](#Tutorial-Basemap-4-Generating-WorldMap-tiles) 
-* [Tutorial Basemap 5: Generating WorldMap_LightGreyCanvas tiles](#Tutorial-Basemap-5-Generating-WorldMap-tiles) 
+* [Tutorial Basemap 1: Generating WorldMap tiles](#tutorial-basemap-1-generating-worldmap-tiles) 
+* [Tutorial Basemap 2: Generating WorldMap_Light tiles](#tutorial-basemap-2-generating-worldmap_light-tiles) 
+* [Tutorial Basemap 3: Generating WorldMap_Canvas tiles](#tutorial-basemap-3-generating-worldmap_canvas-tiles) 
+* [Tutorial Basemap 4: Generating WorldMap_GreyCanvas tiles](#tutorial-basemap-4-generating-worldmap_greycanvas-tiles) 
+* [Tutorial Basemap 5: Generating WorldMap_LightGreyCanvas tiles](#tutorial-basemap-5-generating-worldmap_lightgreycanvas-tiles) 
 
 ## Demo
 
