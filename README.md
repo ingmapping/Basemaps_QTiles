@@ -69,7 +69,9 @@ L.tileLayer('https://tileserver.ingmapping.com/worldmap/{z}/{x}/{y}.png', {
 	}).addTo(map);
 ```
 
-Have a look at this [simple working example](https://github.com/ingmapping/Basemaps_QTiles/blob/master/examples/leaflet.html).  [Leaflet JS - demo](https://tileserver.ingmapping.com/worldmap/leaflet.html).
+Have a look at this [simple working example](https://github.com/ingmapping/Basemaps_QTiles/blob/master/examples/leaflet.html). 
+
+[Leaflet JS - demo](https://tileserver.ingmapping.com/worldmap/leaflet.html).
 
 ### Download tiles
 
