@@ -40,9 +40,8 @@ https://github.com/nextgis/QTiles
 * [How to use it](#how-to-use-it)
 	* [Download tiles](#download-tiles)
 	* [Endpoints](#endpoints)
-	* [How to use endpoints](#how-to-use-endpoints)
-* [Tutorial Basemap 1: Generating WorldMap tiles](#Tutorial Basemap 1: Generating WorldMap tiles) 
-* [Tutorial Basemap 2: Generating WorldMap_Light tiles](#Tutorial-Basemap-2:-Generating-WorldMap-tiles) 
+* [Tutorial Basemap 1: Generating WorldMap tiles](#Tutorial-Basemap-1:-Generating-WorldMap-tiles) 
+* [Tutorial Basemap 2: Generating WorldMap_Light tiles](#Tutorial-Basemap-2) 
 * [Tutorial Basemap 3: Generating WorldMap_Canvas tiles](#Tutorial-Basemap-3:-Generating-WorldMap-tiles) 
 * [Tutorial Basemap 4: Generating WorldMap_GreyCanvas tiles](#Tutorial-Basemap-4:-Generating-WorldMap-tiles) 
 * [Tutorial Basemap 5: Generating WorldMap_LightGreyCanvas tiles](#Tutorial-Basemap-5:-Generating-WorldMap-tiles) 
@@ -71,11 +70,11 @@ You can also download the pre-generated tiles (saved as directory structure or a
 ### Endpoints
 
 * Raw tile endpoints:
-	- WorldMap: `https://tileserver.ingmapping.com/worldmap/{z}/{x}/{y}.png`
-	- WorldMap_Light: `https://tileserver.ingmapping.com/worldmap_light/{z}/{x}/{y}.png`
-	- WorldMap_Canvas: `https://tileserver.ingmapping.com/worldmap_canvas/{z}/{x}/{y}.png`
-	- WorldMap_GreyCanvas: `https://tileserver.ingmapping.com/worldmap_greycanvas/{z}/{x}/{y}.png`
-	- WorldMap_LightGreyCanvas : `https://tileserver.ingmapping.com/worldmap_lightgreycanvas/{z}/{x}/{y}.png`
+	* WorldMap: `https://tileserver.ingmapping.com/worldmap/{z}/{x}/{y}.png`
+	* WorldMap_Light: `https://tileserver.ingmapping.com/worldmap_light/{z}/{x}/{y}.png`
+	* WorldMap_Canvas: `https://tileserver.ingmapping.com/worldmap_canvas/{z}/{x}/{y}.png`
+	* WorldMap_GreyCanvas: `https://tileserver.ingmapping.com/worldmap_greycanvas/{z}/{x}/{y}.png`
+	* WorldMap_LightGreyCanvas : `https://tileserver.ingmapping.com/worldmap_lightgreycanvas/{z}/{x}/{y}.png`
 
 ## Tutorial Basemap 1: Generating WorldMap tiles 
 
