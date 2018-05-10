@@ -73,18 +73,36 @@ Have a look at this [simple working example](https://github.com/ingmapping/Basem
 
 [Leaflet JS - demo](https://tileserver.ingmapping.com/worldmap/leaflet.html).
 
+* [ArcGIS 10.1+] The basemaps can be viewed by loading tiles in ESRI ArcGIS 10.1+ as WMTS Service. See [guide](                           https://tileserver.ingmapping.com/#wordlmap/arcgis10x.guide)
+
+* [QGIS] The basemaps can be viewed by loading tiles in QGIS as WMTS Service. See [guide](                           https://tileserver.ingmapping.com/#worldmap/qgis.guide)
+
 ### Download tiles
 
 You can also download the pre-generated tiles (saved as directory structure or as .mbtiles). 
 
 ### Endpoints
 
-* Raw tile endpoints:
+* Raw XYZ tile endpoints:
 	* WorldMap: `https://tileserver.ingmapping.com/worldmap/{z}/{x}/{y}.png`
 	* WorldMap_Light: `https://tileserver.ingmapping.com/worldmap_light/{z}/{x}/{y}.png`
 	* WorldMap_Canvas: `https://tileserver.ingmapping.com/worldmap_canvas/{z}/{x}/{y}.png`
 	* WorldMap_GreyCanvas: `https://tileserver.ingmapping.com/worldmap_greycanvas/{z}/{x}/{y}.png`
 	* WorldMap_LightGreyCanvas : `https://tileserver.ingmapping.com/worldmap_lightgreycanvas/{z}/{x}/{y}.png`
+	
+* TileJSON metadata endpoints:
+	* WorldMap: `https://tileserver.ingmapping.com/worldmap.json`
+	* WorldMap_Light: `https://tileserver.ingmapping.com/worldmap_light.json`
+	* WorldMap_Canvas: `https://tileserver.ingmapping.com/worldmap_canvas.json`
+	* WorldMap_GreyCanvas: `https://tileserver.ingmapping.com/worldmap_greycanvas.json`
+	* WorldMap_LightGreyCanvas : `https://tileserver.ingmapping.com/worldmap_lightgreycanvas.json`
+	
+* WMTS:
+	* `https://tileserver.ingmapping.com/wmts`
+
+* TMS:
+	* `https://tileserver.ingmapping.com/wmts`
+
 
 ## Tutorial Basemap 1: Generating WorldMap tiles 
 
