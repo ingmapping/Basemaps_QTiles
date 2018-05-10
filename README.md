@@ -13,7 +13,7 @@ Several basemap styles were created in this project:
 4) WorldMap_GreyCanvas
 5) WorldMap_LightGreyCanvas
 
-![alt text](https://github.com/ingmapping/Basemaps_QTiles/blob/master/WorldMaps_demo.gif)
+![alt text](https://github.com/ingmapping/Basemaps_QTiles/blob/master/img/WorldMaps_demo.gif)
 
 About Natural Earth:
 
@@ -33,7 +33,7 @@ https://github.com/nextgis/QTiles
 
 ## Basemap 1: WorldMap basemap 
 
-![alt text](https://github.com/ingmapping/Basemaps_QTiles/blob/master/WorldMap.png)
+![alt text](https://github.com/ingmapping/Basemaps_QTiles/blob/master/img/WorldMap.png)
 
 ### Shapefiles used: 
 
@@ -164,7 +164,7 @@ Press Run to start the tile generation. Once the process is completed, open the 
 
 ## Basemap 2: WorldMap_Light basemap 
 
-![alt text](https://github.com/ingmapping/Basemaps_QTiles/blob/master/WorldMap_Light.png)
+![alt text](https://github.com/ingmapping/Basemaps_QTiles/blob/master/img/WorldMap_Light.png)
 
 ### Shapefiles used: 
 
@@ -294,7 +294,7 @@ Press Run to start the tile generation. Once the process is completed, open the 
 
 ## Basemap 3: WorldMap_Canvas basemap 
 
-![alt text](https://github.com/ingmapping/Basemaps_QTiles/blob/master/WorldMap_Canvas.png)
+![alt text](https://github.com/ingmapping/Basemaps_QTiles/blob/master/img/WorldMap_Canvas.png)
 
 ### Shapefiles used: 
 
@@ -408,7 +408,7 @@ Press Run to start the tile generation. Once the process is completed, open the 
 
 ## Basemap 4: WorldMap_GreyCanvas basemap 
 
-![alt text](https://github.com/ingmapping/Basemaps_QTiles/blob/master/WorldMap_GreyCanvas.png)
+![alt text](https://github.com/ingmapping/Basemaps_QTiles/blob/master/img/WorldMap_GreyCanvas.png)
 
 ### Shapefiles used: 
 
@@ -522,7 +522,7 @@ Press Run to start the tile generation. Once the process is completed, open the 
 
 ## Basemap 5: WorldMap_LightGreyCanvas basemap 
 
-![alt text](https://github.com/ingmapping/Basemaps_QTiles/blob/master/WorldMap_LightGreyCanvas.png)
+![alt text](https://github.com/ingmapping/Basemaps_QTiles/blob/master/img/WorldMap_LightGreyCanvas.png)
 
 ### Shapefiles used: 
 
