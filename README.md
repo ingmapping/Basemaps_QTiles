@@ -1,4 +1,7 @@
 # Basemaps_QTiles
+
+## Introduction 
+
 Creating basemaps from Natural Earth Data with QTiles in QGIS
 
 About the project: 
@@ -31,11 +34,73 @@ https://plugins.qgis.org/plugins/qtiles/
 For developers there is also a Github repository:
 https://github.com/nextgis/QTiles
 
-## Basemap 1: WorldMap basemap 
+## Contents
+
+* [Demo](#demo)
+* [How to use it](#how-to-use-it)
+	* [Download tiles](#download-tiles)
+	* [Endpoints](#endpoints)
+	* [How to use endpoints](#how-to-use-endpoints)
+* [Tutorial Basemap 1: Generating WorldMap tiles](#Tutorial-Basemap-1-Generating-WorldMap-tiles) 
+* [Tutorial Basemap 2: Generating WorldMap_Light tiles](#Tutorial-Basemap-2-Generating-WorldMap-tiles) 
+* [Tutorial Basemap 3: Generating WorldMap_Canvas tiles](#Tutorial-Basemap-3-Generating-WorldMap-tiles) 
+* [Tutorial Basemap 4: Generating WorldMap_GreyCanvas tiles](#Tutorial-Basemap-4-Generating-WorldMap-tiles) 
+* [Tutorial Basemap 5: Generating WorldMap_LightGreyCanvas tiles](#Tutorial-Basemap-5-Generating-WorldMap-tiles) 
+
+## Demo
+
+## How to use it
+
+You use the pre-generated tiled basemaps using various JavaScript libraries or desktop GIS. 
+
+### Download tiles
+
+You can download the pre-generated tiles (saved as directory structure or as .mbtiles). 
+
+### Endpoints
+
+### How to use endpoints
+[Mapox-GL.js](https://www.mapbox.com/mapbox-gl-js/api/) is a JavaScript library that uses WebGL to render vector tiles.
+
+The `achtergrond.json` meets the [Mapbox GL Style Spec](https://www.mapbox.com/mapbox-gl-js/style-spec).
+
+To set up a map with the PDOK vector tiles and `achtergrond.json` you just need to refer to `style: 'https://geodata.nationaalgeoregister.nl/beta/topotiles-viewer/styles/achtergrond.json'`
+
+
+```js
+var map = new mapboxgl.Map({
+    container: 'map-container',
+    style: 'https://geodata.nationaalgeoregister.nl/beta/topotiles-viewer/styles/achtergrond.json',
+    zoom: 11,
+    center: [ 4.8, 52.4]
+});
+```
+
+Have a look at this [simple working example](https://github.com/PDOK/vectortiles-bgt-brt/blob/master/examples/mapbox_map.html).
+
+## Tutorial Basemap 1: Generating WorldMap tiles 
 
 ![alt text](https://github.com/ingmapping/Basemaps_QTiles/blob/master/img/WorldMap.png)
 
-### Shapefiles used: 
+Step 1: Download Natural Earth data 
+Step 2: Create a QGIS project 
+Step 3: Add Layers in the QGIS project
+Step 4: Put the Layers in the correct order
+Step 5: Apply styles
+Step 6: Generate raster tiles with QTiles plugin
+
+Step 1 to 5 can be skipped when cloning this repository and opening the QGIS project (WorldMap.qgs) directly.
+
+First clone this repository
+
+```
+git clone https://github.com/ingmapping/Basemaps_QTiles.git
+```
+Afterwards, open the QGIS project (Worldmap.qgs) and proceed to step 6. 
+
+### Step 1: Download Natural Earth data 
+
+Download the shapefiles (in .zip format) from the website of Natural Earth: http://www.naturalearthdata.com/downloads/. Create a folder “WorldMap” and a subfolder “Data”. Import the downloaded .zip files into the “Data” subfolder. Afterwards, unzip all the .zip files. 
 
 * 50m Physical, Rivers + lake centerlines: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_rivers_lake_centerlines.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_rivers_lake_centerlines.zip (389.27 KB)
 * 10m Physical, Coastline (includes major islands):http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_coastline.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_coastline.zip
@@ -52,20 +117,7 @@ https://github.com/nextgis/QTiles
 * 10m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_ocean.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_ocean.zip (3.48 MB) 
 * 50m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_ocean.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_ocean.zip (450.91 KB) 
 
-## Tutorial Basemap 1: WorldMap basemap
-
-Step 1 to 5 can be skipped when cloning this repository and opening the QGIS project (WorldMap.qgs) directly.
-
-First clone this repository
-
-```
-git clone https://github.com/ingmapping/Basemaps_QTiles.git
-```
-Afterwards, open the QGIS project (Worldmap.qgs) and proceed to step 6. 
-
-### Step 1: Download Natural Earth data 
-
-Download the shapefiles (in .zip format) from the website of Natural Earth: http://www.naturalearthdata.com/downloads/. Create a folder “WorldMap” and a subfolder “Data”. Import the downloaded .zip files into the “Data” subfolder. Afterwards, unzip all the .zip files. 
+Or simply copy paste the following code in the command line:
 
 ```
 mkdir -p WorldMap/Data
@@ -162,11 +214,30 @@ More about slippy maps: https://en.wikipedia.org/wiki/Tiled_web_map/
 
 Press Run to start the tile generation. Once the process is completed, open the leaflet-based viewer QTiles.html in the browser to check if the tiles are rendered correctly.
 
-## Basemap 2: WorldMap_Light basemap 
+## Tutorial Basemap 2: Generating WorldMap_Light tiles
 
 ![alt text](https://github.com/ingmapping/Basemaps_QTiles/blob/master/img/WorldMap_Light.png)
 
-### Shapefiles used: 
+Step 1: Download Natural Earth data 
+Step 2: Create a QGIS project 
+Step 3: Add Layers in the QGIS project
+Step 4: Put the Layers in the correct order
+Step 5: Apply styles
+Step 6: Generate raster tiles with QTiles plugin
+
+Step 1 to 5 can be skipped when cloning this repository and opening the QGIS project (WorldMap.qgs) directly.
+
+First clone this repository
+
+```
+git clone https://github.com/ingmapping/Basemaps_QTiles.git
+```
+Afterwards, open the QGIS project (Worldmap.qgs) and proceed to step 6. 
+
+### Step 1: Download Natural Earth data 
+
+Download the shapefiles (in .zip format) from the website of Natural Earth: http://www.naturalearthdata.com/downloads/. Create a folder “WorldMap_Light” and a subfolder “Data”. Import the downloaded .zip files into the “Data” subfolder. Afterwards, unzip all the .zip files. 
+
 
 * 50m Physical, Rivers + lake centerlines: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_rivers_lake_centerlines.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_rivers_lake_centerlines.zip (389.27 KB)
 * 10m Physical, Coastline (includes major islands):http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_coastline.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_coastline.zip
@@ -183,20 +254,7 @@ Press Run to start the tile generation. Once the process is completed, open the 
 * 10m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_ocean.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_ocean.zip (3.48 MB) 
 * 50m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_ocean.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_ocean.zip (450.91 KB) 
 
-## Tutorial Basemap 2: WorldMap_Light basemap
-
-Step 1 to 5 can be skipped when cloning this repository and opening the QGIS project (WorldMap_Light.qgs) directly.
-
-First clone this repository
-
-```
-git clone https://github.com/ingmapping/Basemaps_QTiles.git
-```
-Afterwards, open the QGIS project (Worldmap_Light.qgs) and proceed to step 6. 
-
-### Step 1: Download Natural Earth data 
-
-Download the shapefiles (in .zip format) from the website of Natural Earth: http://www.naturalearthdata.com/downloads/. Create a folder “WorldMap_Light” and a subfolder “Data”. Import the downloaded .zip files into the “Data” subfolder. Afterwards, unzip all the .zip files. 
+Or simply copy paste the following code in the command line:
 
 ```
 mkdir -p WorldMap_Light/Data
@@ -292,24 +350,16 @@ More about slippy maps: https://en.wikipedia.org/wiki/Tiled_web_map/
 
 Press Run to start the tile generation. Once the process is completed, open the leaflet-based viewer QTiles.html in the browser to check if the tiles are rendered correctly.
 
-## Basemap 3: WorldMap_Canvas basemap 
+## Tutorial Basemap 3: Genersting WorldMap_Canvas tiles 
 
 ![alt text](https://github.com/ingmapping/Basemaps_QTiles/blob/master/img/WorldMap_Canvas.png)
 
-### Shapefiles used: 
-
-* 50m Physical, Rivers + lake centerlines: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_rivers_lake_centerlines.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_rivers_lake_centerlines.zip (389.27 KB)
-* 10m Physical, Lakes: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_lakes.zip or or http://naciscdn.org/naturalearth/10m/physical/ne_10m_lakes.zip (1.74 MB)
-* 10m  Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_glaciated_areas.zip or or http://naciscdn.org/naturalearth/10m/physical/ne_10m_glaciated_areas.zip (1.57 MB)
-* 50m Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_glaciated_areas.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_glaciated_areas.zip (211.39 KB)
-* 10m Cultural, Admin 0 – Countries: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip or http://naciscdn.org/naturalearth/10m/cultural/ne_10m_admin_0_countries.zip (5.12 MB)
-* 10m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_land.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_land.zip (3.32 MB)
-* 50m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_land.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_land.zip (446.45 KB)
-* 10m Physical, Bathymetry 0m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_L_0.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_bathymetry_L_0.zip (2.86 MB) 
-* 10m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_ocean.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_ocean.zip (3.48 MB) 
-* 50m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_ocean.zip or or http://naciscdn.org/naturalearth/50m/physical/ne_50m_ocean.zip (450.91 KB) 
-
-## Tutorial Basemap 3: WorldMap_Canvas basemap
+Step 1: Download Natural Earth data 
+Step 2: Create a QGIS project 
+Step 3: Add Layers in the QGIS project
+Step 4: Put the Layers in the correct order
+Step 5: Apply styles
+Step 6: Generate raster tiles with QTiles plugin
 
 Step 1 to 5 can be skipped when cloning this repository and opening the QGIS project (WorldMap_Canvas.qgs) directly.
 
@@ -323,6 +373,19 @@ Afterwards, open the QGIS project (Worldmap_Canvas.qgs) and proceed to step 6.
 ### Step 1: Download Natural Earth data 
 
 Download the shapefiles (in .zip format) from the website of Natural Earth: http://www.naturalearthdata.com/downloads/. Create a folder “WorldMap_Canvas” and a subfolder “Data”. Import the downloaded .zip files into the “Data” subfolder. Afterwards, unzip all the .zip files. 
+
+* 50m Physical, Rivers + lake centerlines: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_rivers_lake_centerlines.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_rivers_lake_centerlines.zip (389.27 KB)
+* 10m Physical, Lakes: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_lakes.zip or or http://naciscdn.org/naturalearth/10m/physical/ne_10m_lakes.zip (1.74 MB)
+* 10m  Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_glaciated_areas.zip or or http://naciscdn.org/naturalearth/10m/physical/ne_10m_glaciated_areas.zip (1.57 MB)
+* 50m Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_glaciated_areas.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_glaciated_areas.zip (211.39 KB)
+* 10m Cultural, Admin 0 – Countries: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip or http://naciscdn.org/naturalearth/10m/cultural/ne_10m_admin_0_countries.zip (5.12 MB)
+* 10m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_land.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_land.zip (3.32 MB)
+* 50m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_land.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_land.zip (446.45 KB)
+* 10m Physical, Bathymetry 0m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_L_0.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_bathymetry_L_0.zip (2.86 MB) 
+* 10m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_ocean.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_ocean.zip (3.48 MB) 
+* 50m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_ocean.zip or or http://naciscdn.org/naturalearth/50m/physical/ne_50m_ocean.zip (450.91 KB) 
+
+Or simply copy paste the following code in the command line:
 
 ```
 mkdir -p WorldMap_Canvas/Data
@@ -406,24 +469,16 @@ More about slippy maps: https://en.wikipedia.org/wiki/Tiled_web_map/
 
 Press Run to start the tile generation. Once the process is completed, open the leaflet-based viewer QTiles.html in the browser to check if the tiles are rendered correctly.
 
-## Basemap 4: WorldMap_GreyCanvas basemap 
+## Tutorial Basemap 4: Generating WorldMap_GreyCanvas tiles
 
 ![alt text](https://github.com/ingmapping/Basemaps_QTiles/blob/master/img/WorldMap_GreyCanvas.png)
 
-### Shapefiles used: 
-
-* 50m Physical, Rivers + lake centerlines: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_rivers_lake_centerlines.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_rivers_lake_centerlines.zip (389.27 KB)
-* 10m Physical, Lakes: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_lakes.zip or or http://naciscdn.org/naturalearth/10m/physical/ne_10m_lakes.zip (1.74 MB)
-* 10m  Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_glaciated_areas.zip or or http://naciscdn.org/naturalearth/10m/physical/ne_10m_glaciated_areas.zip (1.57 MB)
-* 50m Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_glaciated_areas.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_glaciated_areas.zip (211.39 KB)
-* 10m Cultural, Admin 0 – Countries: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip or http://naciscdn.org/naturalearth/10m/cultural/ne_10m_admin_0_countries.zip (5.12 MB)
-* 10m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_land.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_land.zip (3.32 MB)
-* 50m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_land.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_land.zip (446.45 KB)
-* 10m Physical, Bathymetry 0m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_L_0.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_bathymetry_L_0.zip (2.86 MB) 
-* 10m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_ocean.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_ocean.zip (3.48 MB) 
-* 50m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_ocean.zip or or http://naciscdn.org/naturalearth/50m/physical/ne_50m_ocean.zip (450.91 KB) 
-
-## Tutorial Basemap 4: WorldMap_GreyCanvas basemap
+Step 1: Download Natural Earth data 
+Step 2: Create a QGIS project 
+Step 3: Add Layers in the QGIS project
+Step 4: Put the Layers in the correct order
+Step 5: Apply styles
+Step 6: Generate raster tiles with QTiles plugin
 
 Step 1 to 5 can be skipped when cloning this repository and opening the QGIS project (WorldMap_GreyCanvas.qgs) directly.
 
@@ -437,6 +492,19 @@ Afterwards, open the QGIS project (Worldmap_GreyCanvas.qgs) and proceed to step 
 ### Step 1: Download Natural Earth data 
 
 Download the shapefiles (in .zip format) from the website of Natural Earth: http://www.naturalearthdata.com/downloads/. Create a folder “WorldMap_GreyCanvas” and a subfolder “Data”. Import the downloaded .zip files into the “Data” subfolder. Afterwards, unzip all the .zip files. 
+
+* 50m Physical, Rivers + lake centerlines: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_rivers_lake_centerlines.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_rivers_lake_centerlines.zip (389.27 KB)
+* 10m Physical, Lakes: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_lakes.zip or or http://naciscdn.org/naturalearth/10m/physical/ne_10m_lakes.zip (1.74 MB)
+* 10m  Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_glaciated_areas.zip or or http://naciscdn.org/naturalearth/10m/physical/ne_10m_glaciated_areas.zip (1.57 MB)
+* 50m Physical, Glaciated areas (includes glaciers and recently de-glaciated areas): http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_glaciated_areas.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_glaciated_areas.zip (211.39 KB)
+* 10m Cultural, Admin 0 – Countries: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip or http://naciscdn.org/naturalearth/10m/cultural/ne_10m_admin_0_countries.zip (5.12 MB)
+* 10m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_land.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_land.zip (3.32 MB)
+* 50m Physical, Land: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_land.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_land.zip (446.45 KB)
+* 10m Physical, Bathymetry 0m: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_L_0.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_bathymetry_L_0.zip (2.86 MB) 
+* 10m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_ocean.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_ocean.zip (3.48 MB) 
+* 50m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_ocean.zip or or http://naciscdn.org/naturalearth/50m/physical/ne_50m_ocean.zip (450.91 KB) 
+
+Or simply copy paste the following code in the command line:
 
 ```
 mkdir -p WorldMap_GreyCanvas/Data
@@ -520,11 +588,29 @@ More about slippy maps: https://en.wikipedia.org/wiki/Tiled_web_map/
 
 Press Run to start the tile generation. Once the process is completed, open the leaflet-based viewer QTiles.html in the browser to check if the tiles are rendered correctly.
 
-## Basemap 5: WorldMap_LightGreyCanvas basemap 
+## Tutorial Basemap 5: Generating WorldMap_LightGreyCanvas tiles 
 
 ![alt text](https://github.com/ingmapping/Basemaps_QTiles/blob/master/img/WorldMap_LightGreyCanvas.png)
 
-### Shapefiles used: 
+Step 1: Download Natural Earth data 
+Step 2: Create a QGIS project 
+Step 3: Add Layers in the QGIS project
+Step 4: Put the Layers in the correct order
+Step 5: Apply styles
+Step 6: Generate raster tiles with QTiles plugin
+
+Step 1 to 5 can be skipped when cloning this repository and opening the QGIS project (WorldMap_GreyCanvas.qgs) directly.
+
+First clone this repository
+
+```
+git clone https://github.com/ingmapping/Basemaps_QTiles.git
+```
+Afterwards, open the QGIS project (Worldmap_GreyCanvas.qgs) and proceed to step 6. 
+
+### Step 1: Download Natural Earth data 
+
+Download the shapefiles (in .zip format) from the website of Natural Earth: http://www.naturalearthdata.com/downloads/. Create a folder “WorldMap_GreyCanvas” and a subfolder “Data”. Import the downloaded .zip files into the “Data” subfolder. Afterwards, unzip all the .zip files. 
 
 * 50m Physical, Rivers + lake centerlines: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_rivers_lake_centerlines.zip or http://naciscdn.org/naturalearth/50m/physical/ne_50m_rivers_lake_centerlines.zip (389.27 KB)
 * 10m Physical, Lakes: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_lakes.zip or or http://naciscdn.org/naturalearth/10m/physical/ne_10m_lakes.zip (1.74 MB)
@@ -537,20 +623,8 @@ Press Run to start the tile generation. Once the process is completed, open the 
 * 10m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_ocean.zip or http://naciscdn.org/naturalearth/10m/physical/ne_10m_ocean.zip (3.48 MB) 
 * 50m Physical, Ocean: http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/50m/physical/ne_50m_ocean.zip or or http://naciscdn.org/naturalearth/50m/physical/ne_50m_ocean.zip (450.91 KB) 
 
-## Tutorial Basemap 5: WorldMap_LightGreyCanvas basemap
+Or simply copy paste the following code in the command line:
 
-Step 1 to 5 can be skipped when cloning this repository and opening the QGIS project (WorldMap_LightGreyCanvas.qgs) directly.
-
-First clone this repository
-
-```
-git clone https://github.com/ingmapping/Basemaps_QTiles.git
-```
-Afterwards, open the QGIS project (Worldmap_LightGreyCanvas.qgs) and proceed to step 6. 
-
-### Step 1: Download Natural Earth data 
-
-Download the shapefiles (in .zip format) from the website of Natural Earth: http://www.naturalearthdata.com/downloads/. Create a folder “WorldMap_LightGreyCanvas” and a subfolder “Data”. Import the downloaded .zip files into the “Data” subfolder. Afterwards, unzip all the .zip files. 
 
 ```
 mkdir -p WorldMap_LightGreyCanvas/Data
