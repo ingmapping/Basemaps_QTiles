@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>WorldMap - Mapbox js demo</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
+</head>
+<body>
+
+<div id='map'></div>
+<script>
+	var map = L.map('map').setView([51.505, -0.09], 13);
+
+	L.tileLayer('https://tileserver.ingmapping.com/worldmap/{z}/{x}/{y}.png', {
+		maxZoom: 6,
+		attribution: '<a href="https://github.com/ingmapping/Basemaps_QTiles/">WorldMap from Natural Earth data generated with QTiles in QGIS</a> - <a href="https://www.ingmapping.com">ingmapping.com</a>'
+	}).addTo(map);
+</script>
+
+</body>
+</html>
+
+
