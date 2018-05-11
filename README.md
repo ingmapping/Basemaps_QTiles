@@ -50,11 +50,11 @@ https://github.com/nextgis/QTiles
 
 A demo viewer is available at https://tileserver.ingmapping.com/ 
 
-* WorldMap: [demo](https://tileserver.ingmapping.com/#WorldMap/ol3)
-* WorldMap_Light: [demo](https://tileserver.ingmapping.com/#WorldMap_Light/ol3)
-* WorldMap_Canvas: [demo](https://tileserver.ingmapping.com/#WorldMap_Canvas/ol3)
-* WorldMap_GreyCanvas: [demo](https://tileserver.ingmapping.com/#WorldMap_GreyCanvas/ol3)
-* WorldMap_LightGreyCanvas: [demo](https://tileserver.ingmapping.com/#WorldMap_LightGreyCanvas/ol3)
+* WorldMap: [demo](https://tileserver.ingmapping.com/#worldmap/ol3)
+* WorldMap_Light: [demo](https://tileserver.ingmapping.com/#worldmap_light/ol3)
+* WorldMap_Canvas: [demo](https://tileserver.ingmapping.com/#worldmap_canvas/ol3)
+* WorldMap_GreyCanvas: [demo](https://tileserver.ingmapping.com/#worldmap_greycanvas/ol3)
+* WorldMap_LightGreyCanvas: [demo](https://tileserver.ingmapping.com/#worldmap_lightgreycanvas/ol3)
 
 ## How to use it
 
@@ -70,7 +70,6 @@ L.tileLayer('https://tileserver.ingmapping.com/worldmap/{z}/{x}/{y}.png', {
 ```
 
 Have a look at this [simple working example](https://github.com/ingmapping/Basemaps_QTiles/blob/master/examples/leaflet.html). 
-
 [Leaflet JS - demo](https://tileserver.ingmapping.com/worldmap/leaflet.html).
 
 * [Mapbox JS](https://www.mapbox.com/mapbox.js/api/v3.1.1/) Mapbox.js is a JavaScript library that allows you to add an your interactive map to your website. It is a plugin for Leaflet, and is an open source library that’s free to use.
@@ -83,7 +82,6 @@ L.tileLayer('https://tileserver.ingmapping.com/worldmap/{z}/{x}/{y}.png', {
 ```
 
 Have a look at this [simple working example](https://github.com/ingmapping/Basemaps_QTiles/blob/master/examples/leaflet.html). 
-
 [Mapbox JS - demo](https://tileserver.ingmapping.com/worldmap/mapboxjs.html).
 
 * [OpenLayers 3+](http://openlayers.org/) is an open source JavaScript library for displaying map data in web browsers as slippy maps.
@@ -96,7 +94,6 @@ new ol.layer.Tile({
 ```
 
 Have a look at this [simple working example](https://github.com/ingmapping/Basemaps_QTiles/blob/master/examples/openlayers.html).
-
 [OpenLayers - demo](https://tileserver.ingmapping.com/worldmap/openlayers.html).
 
 * ArcGIS 10.1+: The basemaps can be viewed by loading tiles in ESRI ArcGIS 10.1+ as WMTS Service. See [guide](                           https://tileserver.ingmapping.com/#wordlmap/arcgis10x.guide).
