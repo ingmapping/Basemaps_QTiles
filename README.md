@@ -105,7 +105,7 @@ Have a look at this [simple working example](https://github.com/ingmapping/Basem
 You can also download the pre-generated tiles (saved as directory structure or as .mbtiles). 
 
 * Download pre-generated tiles as .zip file:
-	* [WorldMap](wget https://tileserver.ingmapping.com/worldmap/tiles.zip): `wget https://tileserver.ingmapping.com/worldmap/tiles.zip`
+	* [WorldMap](https://tileserver.ingmapping.com/worldmap/tiles.zip): `wget https://tileserver.ingmapping.com/worldmap/tiles.zip`
 	* [WorldMap_Light](https://tileserver.ingmapping.com/worldmap_light/tiles.zip): `wget https://tileserver.ingmapping.com/worldmap_light/tiles.zip`
 	* [WorldMap_Canvas](https://tileserver.ingmapping.com/worldmap_canvas/tiles.zip): `wget https://tileserver.ingmapping.com/worldmap_canvas/tiles.zip`
 	* [WorldMap_GreyCanvas](https://tileserver.ingmapping.com/worldmap_greycanvas/tiles.zip): `wget https://tileserver.ingmapping.com/worldmap_greycanvas/tiles.zip`
@@ -159,7 +159,7 @@ First clone this repository
 ```
 git clone https://github.com/ingmapping/Basemaps_QTiles.git
 ```
-Afterwards, open the QGIS project (Worldmap.qgs) and proceed to step 6. 
+Afterwards, open the QGIS project (WorldMap.qgs) and proceed to step 6. 
 
 ### Step 1: Download Natural Earth data 
 
@@ -295,7 +295,7 @@ First clone this repository
 ```
 git clone https://github.com/ingmapping/Basemaps_QTiles.git
 ```
-Afterwards, open the QGIS project (Worldmap.qgs) and proceed to step 6. 
+Afterwards, open the QGIS project (WorldMap_Light.qgs) and proceed to step 6. 
 
 ### Step 1: Download Natural Earth data 
 
@@ -431,7 +431,7 @@ First clone this repository
 ```
 git clone https://github.com/ingmapping/Basemaps_QTiles.git
 ```
-Afterwards, open the QGIS project (Worldmap_Canvas.qgs) and proceed to step 6. 
+Afterwards, open the QGIS project (WorldMap_Canvas.qgs) and proceed to step 6. 
 
 ### Step 1: Download Natural Earth data 
 
@@ -550,7 +550,7 @@ First clone this repository
 ```
 git clone https://github.com/ingmapping/Basemaps_QTiles.git
 ```
-Afterwards, open the QGIS project (Worldmap_GreyCanvas.qgs) and proceed to step 6. 
+Afterwards, open the QGIS project (WorldMap_GreyCanvas.qgs) and proceed to step 6. 
 
 ### Step 1: Download Natural Earth data 
 
@@ -669,7 +669,7 @@ First clone this repository
 ```
 git clone https://github.com/ingmapping/Basemaps_QTiles.git
 ```
-Afterwards, open the QGIS project (Worldmap_GreyCanvas.qgs) and proceed to step 6. 
+Afterwards, open the QGIS project (WorldMap_LightGreyCanvas.qgs) and proceed to step 6. 
 
 ### Step 1: Download Natural Earth data 
 
