@@ -83,7 +83,7 @@ L.tileLayer('https://tileserver.ingmapping.com/worldmap/{z}/{x}/{y}.png', {
 	}).addTo(map);
 ```
 
-Have a look at this [simple working example](https://github.com/ingmapping/Basemaps_QTiles/blob/master/examples/leaflet.html). 
+Have a look at this [simple working example](https://github.com/ingmapping/Basemaps_QTiles/blob/master/examples/mapboxjs.html). 
 [Mapbox JS - demo](https://tileserver.ingmapping.com/worldmap/mapboxjs.html).
 
 * [OpenLayers 3+](http://openlayers.org/) is an open source JavaScript library for displaying map data in web browsers as slippy maps.
@@ -97,6 +97,22 @@ new ol.layer.Tile({
 
 Have a look at this [simple working example](https://github.com/ingmapping/Basemaps_QTiles/blob/master/examples/openlayers.html).
 [OpenLayers - demo](https://tileserver.ingmapping.com/worldmap/openlayers.html).
+
+* [Mapbox GL JS](https://www.mapbox.com/mapbox-gl-js/api/) is a JavaScript library that uses WebGL to render interactive maps.
+
+```js
+ "sources": {
+            "simple-tiles": {
+                "type": "raster",
+                "tiles": ["https://tileserver.ingmapping.com/worldmap/{z}/{x}/{y}.png"],
+                "tileSize": 256,
+                 attribution: '<a href="https://github.com/ingmapping/Basemaps_QTiles/">WorldMap from Natural Earth data generated with QTiles in QGIS</a> - <a href="https://www.ingmapping.com">ingmapping.com</a>'
+            }
+        },
+```
+
+Have a look at this [simple working example](https://github.com/ingmapping/Basemaps_QTiles/blob/master/examples/mapboxgl_js.html). 
+[Mapbox GL JS - demo](https://tileserver.ingmapping.com/worldmap/mapboxgl_js.html).
 
 * ArcGIS 10.1+: The basemaps can be viewed by loading tiles in ESRI ArcGIS 10.1+ as WMTS Service. See [guide](                           https://tileserver.ingmapping.com/#wordlmap/arcgis10x.guide).
 
