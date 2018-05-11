@@ -60,7 +60,7 @@ A demo viewer is available at https://tileserver.ingmapping.com/
 
 You use the pre-generated tiled basemaps using various JavaScript libraries or desktop GIS. For example:
 
-* [Leaflet JS](https://leafletjs.com/) is a lightweight open-source JavaScript library for building interactive web maps.
+* [Leaflet JS](https://leafletjs.com/) is a lightweight open source JavaScript library for building interactive web maps.
 
 ```js
 L.tileLayer('https://tileserver.ingmapping.com/worldmap/{z}/{x}/{y}.png', {
@@ -73,13 +73,53 @@ Have a look at this [simple working example](https://github.com/ingmapping/Basem
 
 [Leaflet JS - demo](https://tileserver.ingmapping.com/worldmap/leaflet.html).
 
-* [ArcGIS 10.1+] The basemaps can be viewed by loading tiles in ESRI ArcGIS 10.1+ as WMTS Service. See [guide](                           https://tileserver.ingmapping.com/#wordlmap/arcgis10x.guide)
+* [Mapbox JS](https://www.mapbox.com/mapbox.js/api/v3.1.1/) Mapbox.js is a JavaScript library that allows you to add an your interactive map to your website. It is a plugin for Leaflet, and is an open source library that’s free to use.
 
-* [QGIS] The basemaps can be viewed by loading tiles in QGIS as WMTS Service. See [guide](                           https://tileserver.ingmapping.com/#worldmap/qgis.guide)
+```js
+L.tileLayer('https://tileserver.ingmapping.com/worldmap/{z}/{x}/{y}.png', {
+		maxZoom: 6,
+		attribution: '<a href="https://github.com/ingmapping/Basemaps_QTiles/">WorldMap from Natural Earth data generated with QTiles in QGIS</a> - <a href="https://www.ingmapping.com">ingmapping.com</a>'
+	}).addTo(map);
+```
+
+Have a look at this [simple working example](https://github.com/ingmapping/Basemaps_QTiles/blob/master/examples/leaflet.html). 
+
+[Mapbox JS - demo](https://tileserver.ingmapping.com/worldmap/mapboxjs.html).
+
+* [OpenLayers 3+](http://openlayers.org/) is an open source JavaScript library for displaying map data in web browsers as slippy maps.
+
+```js
+new ol.layer.Tile({
+            source: new ol.source.XYZ({
+              url: 'https://tileserver.ingmapping.com/worldmap/{z}/{x}/{y}.png'
+            })
+```
+
+Have a look at this [simple working example](https://github.com/ingmapping/Basemaps_QTiles/blob/master/examples/openlayers.html).
+
+[OpenLayers - demo](https://tileserver.ingmapping.com/worldmap/openlayers.html).
+
+* ArcGIS 10.1+: The basemaps can be viewed by loading tiles in ESRI ArcGIS 10.1+ as WMTS Service. See [guide](                           https://tileserver.ingmapping.com/#wordlmap/arcgis10x.guide).
+
+* QGIS: The basemaps can be viewed by loading tiles in QGIS as WMTS Service. See [guide](                           https://tileserver.ingmapping.com/#worldmap/qgis.guide).
 
 ### Download tiles
 
 You can also download the pre-generated tiles (saved as directory structure or as .mbtiles). 
+
+* Download pre-generated tiles as .zip file:
+	* [WorldMap](wget https://tileserver.ingmapping.com/worldmap/tiles.zip): `wget https://tileserver.ingmapping.com/worldmap/tiles.zip`
+	* [WorldMap_Light](https://tileserver.ingmapping.com/worldmap_light/tiles.zip): `wget https://tileserver.ingmapping.com/worldmap_light/tiles.zip`
+	* [WorldMap_Canvas](https://tileserver.ingmapping.com/worldmap_canvas/tiles.zip): `wget https://tileserver.ingmapping.com/worldmap_canvas/tiles.zip`
+	* [WorldMap_GreyCanvas](https://tileserver.ingmapping.com/worldmap_greycanvas/tiles.zip): `wget https://tileserver.ingmapping.com/worldmap_greycanvas/tiles.zip`
+	* [WorldMap_LightGreyCanvas](https://tileserver.ingmapping.com/worldmap_lightgreycanvas/tiles.zip) : `wget https://tileserver.ingmapping.com/worldmap_lightgreycanvas/tiles.zip`	
+
+* Download pre-generated tiles as .mbtile file:
+	* [WorldMap](https://tileserver.ingmapping.com/worldmap/worldmap.mbtiles): `wget https://tileserver.ingmapping.com/worldmap/worldmap.mbtiles`
+	* [WorldMap_Light](https://tileserver.ingmapping.com/worldmap_light/worldmap_light.mbtiles): ` wget https://tileserver.ingmapping.com/worldmap_light/worldmap_light.mbtiles`
+	* [WorldMap_Canvas](https://tileserver.ingmapping.com/worldmap_canvas/worldmap_canvas.mbtiles): `wget https://tileserver.ingmapping.com/worldmap_canvas/worldmap_canvas.mbtiles`
+	* [WorldMap_GreyCanvas](https://tileserver.ingmapping.com/worldmap_greycanvas/worldmap_greycanvas.mbtiles): `wget https://tileserver.ingmapping.com/worldmap_greycanvas/worldmap_greycanvas.mbtiles`
+	* [WorldMap_LightGreyCanvas](https://tileserver.ingmapping.com/worldmap_lightgreycanvas/worldmap_lightgreycanvas.mbtiles) : ` wget https://tileserver.ingmapping.com/worldmap_lightgreycanvas/worldmap_lightgreycanvas.mbtiles`
 
 ### Endpoints
 
@@ -101,7 +141,7 @@ You can also download the pre-generated tiles (saved as directory structure or a
 	* `https://tileserver.ingmapping.com/wmts`
 
 * TMS:
-	* `https://tileserver.ingmapping.com/wmts`
+	* `https://tileserver.ingmapping.com/tms`
 
 
 ## Tutorial Basemap 1: Generating WorldMap tiles 
