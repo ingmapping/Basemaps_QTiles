@@ -2,7 +2,7 @@
 
 ## Introduction 
 
-Creating basemaps from Natural Earth Data with QTiles in QGIS
+Creating raster tiled basemaps from Natural Earth Data with QTiles in QGIS
 
 About the project: 
 
@@ -17,6 +17,8 @@ Several basemap styles were created in this project:
 5) WorldMap_LightGreyCanvas
 
 ![alt text](https://github.com/ingmapping/Basemaps_QTiles/blob/master/img/WorldMaps_demo.gif)
+
+A demo viewer is available at https://tileserver.ingmapping.com/
 
 About Natural Earth:
 
@@ -111,7 +113,7 @@ You can also download the pre-generated tiles (saved as directory structure or a
 	* [WorldMap_GreyCanvas](https://tileserver.ingmapping.com/worldmap_greycanvas/tiles.zip): `wget https://tileserver.ingmapping.com/worldmap_greycanvas/tiles.zip`
 	* [WorldMap_LightGreyCanvas](https://tileserver.ingmapping.com/worldmap_lightgreycanvas/tiles.zip) : `wget https://tileserver.ingmapping.com/worldmap_lightgreycanvas/tiles.zip`	
 
-* Download pre-generated tiles as .mbtile file:
+* Download pre-generated tiles as .mbtiles file:
 	* [WorldMap](https://tileserver.ingmapping.com/worldmap/worldmap.mbtiles): `wget https://tileserver.ingmapping.com/worldmap/worldmap.mbtiles`
 	* [WorldMap_Light](https://tileserver.ingmapping.com/worldmap_light/worldmap_light.mbtiles): ` wget https://tileserver.ingmapping.com/worldmap_light/worldmap_light.mbtiles`
 	* [WorldMap_Canvas](https://tileserver.ingmapping.com/worldmap_canvas/worldmap_canvas.mbtiles): `wget https://tileserver.ingmapping.com/worldmap_canvas/worldmap_canvas.mbtiles`
