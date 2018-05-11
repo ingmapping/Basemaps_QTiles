@@ -89,10 +89,12 @@ Have a look at this [simple working example](https://github.com/ingmapping/Basem
 * [OpenLayers 3+](http://openlayers.org/) is an open source JavaScript library for displaying map data in web browsers as slippy maps.
 
 ```js
-new ol.layer.Tile({
+          new ol.layer.Tile({
             source: new ol.source.XYZ({
-              url: 'https://tileserver.ingmapping.com/worldmap/{z}/{x}/{y}.png'
+              url: 'https://tileserver.ingmapping.com/worldmap/{z}/{x}/{y}.png',
+	      attributions: [new ol.Attribution({html: '<a href="https://github.com/ingmapping/Basemaps_QTiles/">WorldMap from Natural Earth data generated with QTiles in QGIS</a> - <a href="https://www.ingmapping.com">ingmapping.com</a>'})]
             })
+          })
 ```
 
 Have a look at this [simple working example](https://github.com/ingmapping/Basemaps_QTiles/blob/master/examples/openlayers.html).
