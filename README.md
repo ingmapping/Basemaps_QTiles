@@ -255,7 +255,7 @@ Place the layers in the correct order. From top to buttom:
 - ne_10_bathymetry_J_1000
 - ne_10_bathymetry_K_200
 - ne_10_bathymetry_L_0
-- ne_10m_ocean4
+- ne_10m_ocean
 - ne_50m_ocean
 
 ### Step 5: Apply styles
@@ -392,7 +392,7 @@ Place the layers in the correct order. From top to bottom:
 - ne_10_bathymetry_J_1000
 - ne_10_bathymetry_K_200
 - ne_10_bathymetry_L_0
-- ne_10m_ocean4
+- ne_10m_ocean
 - ne_50m_ocean
 
 ### Step 5: Apply styles
