@@ -18,7 +18,7 @@ Several basemap styles were created in this project:
 
 ![alt text](https://github.com/ingmapping/Basemaps_QTiles/blob/master/img/WorldMaps_demo.gif)
 
-A demo viewer is available at https://tileserver.ingmapping.com/
+A demo viewer is available at https://ingmapping.xyz/tileserver
 
 About Natural Earth:
 
@@ -50,13 +50,13 @@ https://github.com/nextgis/QTiles
 
 ## Demo
 
-A demo viewer is available at https://tileserver.ingmapping.com/ 
+A demo viewer is available at https://ingmapping.xyz/tileserver
 
-* WorldMap: [demo](https://tileserver.ingmapping.com/#worldmap/ol3)
-* WorldMap_Light: [demo](https://tileserver.ingmapping.com/#worldmap_light/ol3)
-* WorldMap_Canvas: [demo](https://tileserver.ingmapping.com/#worldmap_canvas/ol3)
-* WorldMap_GreyCanvas: [demo](https://tileserver.ingmapping.com/#worldmap_greycanvas/ol3)
-* WorldMap_LightGreyCanvas: [demo](https://tileserver.ingmapping.com/#worldmap_lightgreycanvas/ol3)
+* WorldMap: [demo](https://https://ingmapping.xyz/tileserver/#worldmap/ol3)
+* WorldMap_Light: [demo](https://ingmapping.xyz/tileserver/#worldmap_light/ol3)
+* WorldMap_Canvas: [demo](https://ingmapping.xyz/tileserver/#worldmap_canvas/ol3)
+* WorldMap_GreyCanvas: [demo](https://ingmapping.xyz/tileserver/#worldmap_greycanvas/ol3)
+* WorldMap_LightGreyCanvas: [demo](https://ingmapping.xyz/tileserver/#worldmap_lightgreycanvas/ol3)
 
 ## How to use it
 
@@ -72,7 +72,7 @@ L.tileLayer('https://tileserver.ingmapping.com/worldmap/{z}/{x}/{y}.png', {
 ```
 
 Have a look at this [simple working example](https://github.com/ingmapping/Basemaps_QTiles/blob/master/examples/leaflet.html). 
-[Leaflet JS - demo](https://tileserver.ingmapping.com/worldmap/leaflet.html).
+[Leaflet JS - demo](https://ingmapping.xyz/tileserver/worldmap/leaflet.html).
 
 * [Mapbox JS](https://www.mapbox.com/mapbox.js/api/v3.1.1/) Mapbox.js is a JavaScript library that allows you to add an your interactive map to your website. It is a plugin for Leaflet, and is an open source library that’s free to use.
 
@@ -84,7 +84,7 @@ L.tileLayer('https://tileserver.ingmapping.com/worldmap/{z}/{x}/{y}.png', {
 ```
 
 Have a look at this [simple working example](https://github.com/ingmapping/Basemaps_QTiles/blob/master/examples/mapboxjs.html). 
-[Mapbox JS - demo](https://tileserver.ingmapping.com/worldmap/mapboxjs.html).
+[Mapbox JS - demo](https://ingmapping.xyz/tileserver/worldmap/mapboxjs.html).
 
 * [OpenLayers 3+](http://openlayers.org/) is an open source JavaScript library for displaying map data in web browsers as slippy maps.
 
@@ -98,7 +98,7 @@ Have a look at this [simple working example](https://github.com/ingmapping/Basem
 ```
 
 Have a look at this [simple working example](https://github.com/ingmapping/Basemaps_QTiles/blob/master/examples/openlayers.html).
-[OpenLayers - demo](https://tileserver.ingmapping.com/worldmap/openlayers.html).
+[OpenLayers - demo](https://ingmapping.xyz/tileserver/worldmap/openlayers.html).
 
 * [Mapbox GL JS](https://www.mapbox.com/mapbox-gl-js/api/) is a JavaScript library that uses WebGL to render interactive maps.
 
@@ -106,7 +106,7 @@ Have a look at this [simple working example](https://github.com/ingmapping/Basem
  "sources": {
             "simple-tiles": {
                 "type": "raster",
-                "tiles": ["https://tileserver.ingmapping.com/worldmap/{z}/{x}/{y}.png"],
+                "tiles": ["https://ingmapping.xyz/tileserver/worldmap/{z}/{x}/{y}.png"],
                 "tileSize": 256,
                  attribution: '<a href="https://github.com/ingmapping/Basemaps_QTiles/">WorldMap from Natural Earth data generated with QTiles in QGIS</a> - <a href="https://www.ingmapping.com">ingmapping.com</a>'
             }
@@ -114,51 +114,51 @@ Have a look at this [simple working example](https://github.com/ingmapping/Basem
 ```
 
 Have a look at this [simple working example](https://github.com/ingmapping/Basemaps_QTiles/blob/master/examples/mapboxgl_js.html). 
-[Mapbox GL JS - demo](https://tileserver.ingmapping.com/worldmap/mapboxgl_js.html).
+[Mapbox GL JS - demo](https://ingmapping.xyz/tileserver/worldmap/mapboxgl_js.html).
 
-* ArcGIS 10.1+: The basemaps can be viewed by loading tiles in ESRI ArcGIS 10.1+ as WMTS Service. See [guide](                           https://tileserver.ingmapping.com/#wordlmap/arcgis10x.guide).
+* ArcGIS 10.1+: The basemaps can be viewed by loading tiles in ESRI ArcGIS 10.1+ as WMTS Service. See [guide](                     https://ingmapping.xyz/tileserver/#wordlmap/arcgis10x.guide).
 
-* QGIS: The basemaps can be viewed by loading tiles in QGIS as WMTS Service. See [guide](                           https://tileserver.ingmapping.com/#worldmap/qgis.guide).
+* QGIS: The basemaps can be viewed by loading tiles in QGIS as WMTS Service. See [guide](https://ingmapping.xyz/tileserver/#worldmap/qgis.guide).
 
 ### Download tiles
 
 You can also download the pre-generated tiles (saved as directory structure or as .mbtiles). 
 
 * Download pre-generated tiles as .zip file:
-	* [WorldMap](https://tileserver.ingmapping.com/worldmap/tiles.zip): `wget https://tileserver.ingmapping.com/worldmap/tiles.zip`
-	* [WorldMap_Light](https://tileserver.ingmapping.com/worldmap_light/tiles.zip): `wget https://tileserver.ingmapping.com/worldmap_light/tiles.zip`
-	* [WorldMap_Canvas](https://tileserver.ingmapping.com/worldmap_canvas/tiles.zip): `wget https://tileserver.ingmapping.com/worldmap_canvas/tiles.zip`
-	* [WorldMap_GreyCanvas](https://tileserver.ingmapping.com/worldmap_greycanvas/tiles.zip): `wget https://tileserver.ingmapping.com/worldmap_greycanvas/tiles.zip`
-	* [WorldMap_LightGreyCanvas](https://tileserver.ingmapping.com/worldmap_lightgreycanvas/tiles.zip) : `wget https://tileserver.ingmapping.com/worldmap_lightgreycanvas/tiles.zip`	
+	* [WorldMap](https://ingmapping.xyz/tileserver/worldmap/tiles.zip): `wget https://tileserver.ingmapping.com/worldmap/tiles.zip`
+	* [WorldMap_Light](https://ingmapping.xyz/tileserver/worldmap_light/tiles.zip): `wget https://tileserver.ingmapping.com/worldmap_light/tiles.zip`
+	* [WorldMap_Canvas](https://ingmapping.xyz/tileserver/worldmap_canvas/tiles.zip): `wget https://tileserver.ingmapping.com/worldmap_canvas/tiles.zip`
+	* [WorldMap_GreyCanvas](https://ingmapping.xyz/tileserver/worldmap_greycanvas/tiles.zip): `wget https://tileserver.ingmapping.com/worldmap_greycanvas/tiles.zip`
+	* [WorldMap_LightGreyCanvas](https://ingmapping.xyz/tileserver/worldmap_lightgreycanvas/tiles.zip) : `wget https://tileserver.ingmapping.com/worldmap_lightgreycanvas/tiles.zip`	
 
 * Download pre-generated tiles as .mbtiles file:
-	* [WorldMap](https://tileserver.ingmapping.com/worldmap/worldmap.mbtiles): `wget https://tileserver.ingmapping.com/worldmap/worldmap.mbtiles`
-	* [WorldMap_Light](https://tileserver.ingmapping.com/worldmap_light/worldmap_light.mbtiles): ` wget https://tileserver.ingmapping.com/worldmap_light/worldmap_light.mbtiles`
-	* [WorldMap_Canvas](https://tileserver.ingmapping.com/worldmap_canvas/worldmap_canvas.mbtiles): `wget https://tileserver.ingmapping.com/worldmap_canvas/worldmap_canvas.mbtiles`
-	* [WorldMap_GreyCanvas](https://tileserver.ingmapping.com/worldmap_greycanvas/worldmap_greycanvas.mbtiles): `wget https://tileserver.ingmapping.com/worldmap_greycanvas/worldmap_greycanvas.mbtiles`
-	* [WorldMap_LightGreyCanvas](https://tileserver.ingmapping.com/worldmap_lightgreycanvas/worldmap_lightgreycanvas.mbtiles) : ` wget https://tileserver.ingmapping.com/worldmap_lightgreycanvas/worldmap_lightgreycanvas.mbtiles`
+	* [WorldMap](https://ingmapping.xyz/tileserver.com/worldmap/worldmap.mbtiles): `wget https://tileserver.ingmapping.com/worldmap/worldmap.mbtiles`
+	* [WorldMap_Light](https://ingmapping.xyz/tileserver/worldmap_light/worldmap_light.mbtiles): ` wget https://ingmapping.xyz/tileserver/worldmap_light/worldmap_light.mbtiles`
+	* [WorldMap_Canvas](https://ingmapping.xyz/tileserver/worldmap_canvas/worldmap_canvas.mbtiles): `wget https://ingmapping.xyz/tileserver/worldmap_canvas/worldmap_canvas.mbtiles`
+	* [WorldMap_GreyCanvas](https://ingmapping.xyz/tileserver/worldmap_greycanvas/worldmap_greycanvas.mbtiles): `wget https://ingmapping.xyz/tileserver/worldmap_greycanvas/worldmap_greycanvas.mbtiles`
+	* [WorldMap_LightGreyCanvas](https://ingmapping.xyz/tileserver/worldmap_lightgreycanvas/worldmap_lightgreycanvas.mbtiles) : ` wget https://ingmapping.xyz/tileserver/worldmap_lightgreycanvas/worldmap_lightgreycanvas.mbtiles`
 
 ### Endpoints
 
 * Raw XYZ tile endpoints:
-	* WorldMap: `https://tileserver.ingmapping.com/worldmap/{z}/{x}/{y}.png`
-	* WorldMap_Light: `https://tileserver.ingmapping.com/worldmap_light/{z}/{x}/{y}.png`
-	* WorldMap_Canvas: `https://tileserver.ingmapping.com/worldmap_canvas/{z}/{x}/{y}.png`
-	* WorldMap_GreyCanvas: `https://tileserver.ingmapping.com/worldmap_greycanvas/{z}/{x}/{y}.png`
-	* WorldMap_LightGreyCanvas : `https://tileserver.ingmapping.com/worldmap_lightgreycanvas/{z}/{x}/{y}.png`
+	* WorldMap: `https://ingmapping.xyz/tileserver/worldmap/{z}/{x}/{y}.png`
+	* WorldMap_Light: `https://ingmapping.xyz/tileserver/worldmap_light/{z}/{x}/{y}.png`
+	* WorldMap_Canvas: `https://ingmapping.xyz/tileserver/worldmap_canvas/{z}/{x}/{y}.png`
+	* WorldMap_GreyCanvas: `https://ingmapping.xyz/tileserver/worldmap_greycanvas/{z}/{x}/{y}.png`
+	* WorldMap_LightGreyCanvas : `https://ingmapping.xyz/tileserver/worldmap_lightgreycanvas/{z}/{x}/{y}.png`
 	
 * TileJSON metadata endpoints:
-	* WorldMap: `https://tileserver.ingmapping.com/worldmap.json`
-	* WorldMap_Light: `https://tileserver.ingmapping.com/worldmap_light.json`
-	* WorldMap_Canvas: `https://tileserver.ingmapping.com/worldmap_canvas.json`
-	* WorldMap_GreyCanvas: `https://tileserver.ingmapping.com/worldmap_greycanvas.json`
-	* WorldMap_LightGreyCanvas : `https://tileserver.ingmapping.com/worldmap_lightgreycanvas.json`
+	* WorldMap: `https://ingmapping.xyz/tileserver/worldmap.json`
+	* WorldMap_Light: `https://ingmapping.xyz/tileserver/worldmap_light.json`
+	* WorldMap_Canvas: `https://ingmapping.xyz/tileserver/worldmap_canvas.json`
+	* WorldMap_GreyCanvas: `https://ingmapping.xyz/tileserver/worldmap_greycanvas.json`
+	* WorldMap_LightGreyCanvas : `https://ingmapping.xyz/tileserver/worldmap_lightgreycanvas.json`
 	
 * WMTS:
-	* `https://tileserver.ingmapping.com/wmts`
+	* `https://ingmapping.xyz/tileserver/wmts`
 
 * TMS:
-	* `https://tileserver.ingmapping.com/tms`
+	* `https://ingmapping.xyz/tileserver/tms`
 
 
 ## Tutorial Basemap 1: Generating WorldMap tiles 
